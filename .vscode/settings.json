@@ -1,0 +1,10 @@
+{
+   "python.linting.pylintArgs": [
+        "--generate-members"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.pythonPath": "/usr/bin/python"
+}

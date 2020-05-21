@@ -137,6 +137,7 @@ def geoplot(canvas):
 
 anim = None
 
+
 @matplotlib_app.register(title="animatplot")
 def animatplot(canvas):
 
@@ -152,14 +153,16 @@ def animatplot(canvas):
 
     block = amp.blocks.Line(X, Y, ax=ax)
 
-    canvas.figure.subplots_adjust(top=0.8) # squish the plot to make space for the controls
-    slider_ax = canvas.figure.add_axes([.18, .89, .5, .03]) # the rect of the axis
-    button_ax = canvas.figure.add_axes([.78, .87, .1, .07]) # x, y, width, height
+    canvas.figure.subplots_adjust(
+        top=0.8
+    )  # squish the plot to make space for the controls
+    slider_ax = canvas.figure.add_axes([0.18, 0.89, 0.5, 0.03])  # the rect of the axis
+    button_ax = canvas.figure.add_axes([0.78, 0.87, 0.1, 0.07])  # x, y, width, height
 
     anim = amp.Animation([block], fig=canvas.figure)
 
     anim.toggle(ax=button_ax)
-    anim.timeline_slider(text='TIME', ax=slider_ax, color='red', valfmt='%1.0f')
+    anim.timeline_slider(text="TIME", ax=slider_ax, color="red", valfmt="%1.0f")
 
 
 def main():
