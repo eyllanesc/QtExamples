@@ -7,12 +7,15 @@ Examples
 =========
 
 * [Official](official)
-  * [network](official/network)
-    * [googlesuggest](official/network/googlesuggest)
-  * [multimedia](official/multimedia/)
-    * [audiodevices](official/multimedia/audiodevices)
   * [dbus](official/dbus)
     * [pingpong](official/dbus/pingpong)
+  * [multimedia](official/multimedia/)
+    * [audiodevices](official/multimedia/audiodevices)
+  * [network](official/network)
+    * [googlesuggest](official/network/googlesuggest)
+  * [webengine](official/webengine)
+    * [recipebrowser](official/webengine/recipebrowser)
+
 * [others](others)
   * [gst_pipeline](others/gst_pipeline)
   * [matplotlib integration](others/matplotlib)
