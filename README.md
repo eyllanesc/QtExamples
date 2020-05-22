@@ -15,6 +15,8 @@ Examples
     * [googlesuggest](official/network/googlesuggest)
   * [webengine](official/webengine)
     * [recipebrowser](official/webengine/recipebrowser)
+  * [webenginewidgets](official/webenginewidgets)
+    * [maps](official/webenginewidgets/maps)
 
 * [others](others)
   * [gst_pipeline](others/gst_pipeline)
