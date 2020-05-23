@@ -168,23 +168,32 @@ class AudioTest(AudioDevicesBase):
                                 codecItem = QTableWidgetItem(format.codec())
                                 self.allFormatsTable.setItem(row, 0, codecItem)
 
-                                sampleRateItem = QTableWidgetItem(f"{format.sampleRate()}")
+                                sampleRateItem = QTableWidgetItem(
+                                    f"{format.sampleRate()}"
+                                )
                                 self.allFormatsTable.setItem(row, 1, sampleRateItem)
 
-                                channelsItem = QTableWidgetItem(f"{format.channelCount()}")
+                                channelsItem = QTableWidgetItem(
+                                    f"{format.channelCount()}"
+                                )
                                 self.allFormatsTable.setItem(row, 2, channelsItem)
 
-                                sampleTypeItem = QTableWidgetItem(toString(format.sampleType()))
+                                sampleTypeItem = QTableWidgetItem(
+                                    toString(format.sampleType())
+                                )
                                 self.allFormatsTable.setItem(row, 3, sampleTypeItem)
 
-                                sampleSizeItem = QTableWidgetItem(f"{format.sampleSize()}")
+                                sampleSizeItem = QTableWidgetItem(
+                                    f"{format.sampleSize()}"
+                                )
                                 self.allFormatsTable.setItem(row, 4, sampleSizeItem)
 
-                                byteOrderItem = QTableWidgetItem(toString(format.byteOrder()));
-                                self.allFormatsTable.setItem(row, 5, byteOrderItem);
+                                byteOrderItem = QTableWidgetItem(
+                                    toString(format.byteOrder())
+                                )
+                                self.allFormatsTable.setItem(row, 5, byteOrderItem)
 
                                 row += 1
-
 
     @pyqtSlot(int)
     def sampleRateChanged(self, idx: int) -> None:

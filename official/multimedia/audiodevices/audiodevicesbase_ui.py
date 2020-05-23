@@ -19,7 +19,9 @@ class Ui_AudioDevicesBase(object):
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout.setObjectName("verticalLayout")
         self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.scrollArea.sizePolicy().hasHeightForWidth())
@@ -54,7 +56,9 @@ class Ui_AudioDevicesBase(object):
         self.gridLayout = QtWidgets.QGridLayout(self.testFormatTab)
         self.gridLayout.setObjectName("gridLayout")
         self.actualLabel = QtWidgets.QLabel(self.testFormatTab)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.actualLabel.sizePolicy().hasHeightForWidth())
@@ -66,7 +70,9 @@ class Ui_AudioDevicesBase(object):
         self.actualLabel.setObjectName("actualLabel")
         self.gridLayout.addWidget(self.actualLabel, 0, 1, 1, 1)
         self.nearestLabel = QtWidgets.QLabel(self.testFormatTab)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.nearestLabel.sizePolicy().hasHeightForWidth())
@@ -78,10 +84,14 @@ class Ui_AudioDevicesBase(object):
         self.nearestLabel.setObjectName("nearestLabel")
         self.gridLayout.addWidget(self.nearestLabel, 0, 2, 1, 1)
         self.sampleRateBox = QtWidgets.QComboBox(self.testFormatTab)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.sampleRateBox.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.sampleRateBox.sizePolicy().hasHeightForWidth()
+        )
         self.sampleRateBox.setSizePolicy(sizePolicy)
         self.sampleRateBox.setObjectName("sampleRateBox")
         self.gridLayout.addWidget(self.sampleRateBox, 3, 1, 1, 1)
@@ -130,7 +140,9 @@ class Ui_AudioDevicesBase(object):
         self.actualEndianLabel.setObjectName("actualEndianLabel")
         self.gridLayout.addWidget(self.actualEndianLabel, 14, 0, 1, 1)
         self.label = QtWidgets.QLabel(self.testFormatTab)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
@@ -170,7 +182,9 @@ class Ui_AudioDevicesBase(object):
         self.allFormatsTable.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.allFormatsTable.setDragDropOverwriteMode(False)
         self.allFormatsTable.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
-        self.allFormatsTable.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectItems)
+        self.allFormatsTable.setSelectionBehavior(
+            QtWidgets.QAbstractItemView.SelectItems
+        )
         self.allFormatsTable.setTextElideMode(QtCore.Qt.ElideNone)
         self.allFormatsTable.setWordWrap(False)
         self.allFormatsTable.setCornerButtonEnabled(False)
@@ -178,22 +192,34 @@ class Ui_AudioDevicesBase(object):
         self.allFormatsTable.setColumnCount(6)
         self.allFormatsTable.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(
+            QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter | QtCore.Qt.AlignCenter
+        )
         self.allFormatsTable.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(
+            QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter | QtCore.Qt.AlignCenter
+        )
         self.allFormatsTable.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(
+            QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter | QtCore.Qt.AlignCenter
+        )
         self.allFormatsTable.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(
+            QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter | QtCore.Qt.AlignCenter
+        )
         self.allFormatsTable.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(
+            QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter | QtCore.Qt.AlignCenter
+        )
         self.allFormatsTable.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(
+            QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter | QtCore.Qt.AlignCenter
+        )
         self.allFormatsTable.setHorizontalHeaderItem(5, item)
         self.allFormatsTable.horizontalHeader().setHighlightSections(False)
         self.allFormatsTable.verticalHeader().setVisible(False)
@@ -220,22 +246,41 @@ class Ui_AudioDevicesBase(object):
         self.deviceLabel.setText(_translate("AudioDevicesBase", "Device"))
         self.modeBox.setItemText(0, _translate("AudioDevicesBase", "Input"))
         self.modeBox.setItemText(1, _translate("AudioDevicesBase", "Output"))
-        self.actualLabel.setText(_translate("AudioDevicesBase", "<i>Actual Settings</i>"))
-        self.nearestLabel.setText(_translate("AudioDevicesBase", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Nearest Settings</span></p></body></html>"))
+        self.actualLabel.setText(
+            _translate("AudioDevicesBase", "<i>Actual Settings</i>")
+        )
+        self.nearestLabel.setText(
+            _translate(
+                "AudioDevicesBase",
+                '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">\n'
+                '<html><head><meta name="qrichtext" content="1" /><style type="text/css">\n'
+                "p, li { white-space: pre-wrap; }\n"
+                "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+                '<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-style:italic;">Nearest Settings</span></p></body></html>',
+            )
+        )
         self.testButton.setText(_translate("AudioDevicesBase", "Test"))
         self.actualFreqLabel.setText(_translate("AudioDevicesBase", "Frequency (Hz)"))
         self.actualChannelLabel.setText(_translate("AudioDevicesBase", "Channels"))
-        self.actualSampleSizeLabel.setText(_translate("AudioDevicesBase", "Sample size (bits)"))
+        self.actualSampleSizeLabel.setText(
+            _translate("AudioDevicesBase", "Sample size (bits)")
+        )
         self.actualEndianLabel.setText(_translate("AudioDevicesBase", "Endianness"))
-        self.label.setText(_translate("AudioDevicesBase", "Note: an invalid codec \'audio/test\' exists in order to allow an invalid format to be constructed, and therefore to trigger a \'nearest format\' calculation."))
+        self.label.setText(
+            _translate(
+                "AudioDevicesBase",
+                "Note: an invalid codec 'audio/test' exists in order to allow an invalid format to be constructed, and therefore to trigger a 'nearest format' calculation.",
+            )
+        )
         self.actualCodecLabel.setText(_translate("AudioDevicesBase", "Codec"))
         self.actualSampleTypeLabel.setText(_translate("AudioDevicesBase", "SampleType"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.testFormatTab), _translate("AudioDevicesBase", "Test format"))
-        self.populateTableButton.setText(_translate("AudioDevicesBase", "Populate table"))
+        self.tabWidget.setTabText(
+            self.tabWidget.indexOf(self.testFormatTab),
+            _translate("AudioDevicesBase", "Test format"),
+        )
+        self.populateTableButton.setText(
+            _translate("AudioDevicesBase", "Populate table")
+        )
         self.allFormatsTable.setSortingEnabled(False)
         item = self.allFormatsTable.horizontalHeaderItem(0)
         item.setText(_translate("AudioDevicesBase", "Codec"))
@@ -249,11 +294,15 @@ class Ui_AudioDevicesBase(object):
         item.setText(_translate("AudioDevicesBase", "Sample size (bits)"))
         item = self.allFormatsTable.horizontalHeaderItem(5)
         item.setText(_translate("AudioDevicesBase", "Endianness"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("AudioDevicesBase", "All formats"))
+        self.tabWidget.setTabText(
+            self.tabWidget.indexOf(self.tab),
+            _translate("AudioDevicesBase", "All formats"),
+        )
 
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     AudioDevicesBase = QtWidgets.QMainWindow()
     ui = Ui_AudioDevicesBase()

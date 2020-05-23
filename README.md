@@ -1,7 +1,7 @@
 # QtExamples
 Translations of the official Qt examples into PyQt5 (also PySide2) and more.
 
- [![GitHub](https://img.shields.io/github/license/eyllanesc/QtExamples.svg)](https://github.com/eyllanesc/stackoverflow/blob/master/LICENSE) [![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg?logo=paypal)](https://www.paypal.me/eyllanesc)[![BuyMeACoffe](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/eyllanesc)
+ [![GitHub](https://img.shields.io/github/license/eyllanesc/QtExamples.svg)](https://github.com/eyllanesc/QtExamples/blob/master/LICENSE) [![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg?logo=paypal)](https://www.paypal.me/eyllanesc)[![BuyMeACoffe](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/eyllanesc)
 
 Examples
 =========
@@ -13,6 +13,7 @@ Examples
     * [audiodevices](official/multimedia/audiodevices)
   * [network](official/network)
     * [googlesuggest](official/network/googlesuggest)
+    * [loopback](official/network/loopback)
   * [webengine](official/webengine)
     * [recipebrowser](official/webengine/recipebrowser)
   * [webenginewidgets](official/webenginewidgets)
