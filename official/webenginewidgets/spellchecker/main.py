@@ -4,7 +4,7 @@ from PyQt5.QtCore import QCoreApplication, Qt, QUrl
 from PyQt5.QtWidgets import QAction, QApplication
 from PyQt5.QtWebEngineWidgets import QWebEngineView
 
-import pellchecker_rc  # noqa: F401
+import spellchecker_rc  # noqa: F401
 
 
 class WebView(QWebEngineView):
