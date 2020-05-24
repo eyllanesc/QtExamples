@@ -17,6 +17,7 @@ Examples
   * [webengine](official/webengine)
     * [recipebrowser](official/webengine/recipebrowser)
   * [webenginewidgets](official/webenginewidgets)
+    * [spellchecker](official/webenginewidgets/spellchecker)
     * [maps](official/webenginewidgets/maps)
 
 * [others](others)
