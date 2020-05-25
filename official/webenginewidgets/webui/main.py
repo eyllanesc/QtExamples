@@ -42,7 +42,6 @@ class WebUiHandler(QWebEngineUrlSchemeHandler):
             | QWebEngineUrlScheme.LocalAccessAllowed
         )
         QWebEngineUrlScheme.registerScheme(webUiScheme)
-        cls.scheme = webUiScheme
 
     schemeName: QByteArray = SCHEMENAME.encode()
     aboutUrl: QUrl = QUrl(SCHEMENAME + ":about")
