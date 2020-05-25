@@ -18,6 +18,7 @@ Examples
     * [recipebrowser](official/webengine/recipebrowser)
   * [webenginewidgets](official/webenginewidgets)
     * [contentmanipulation](official/webenginewidgets/contentmanipulation)
+    * [html2pdf](official/webenginewidgets/html2pdf)
     * [cookiebrowser](official/webenginewidgets/cookiebrowser)
     * [maps](official/webenginewidgets/maps)
     * [spellchecker](official/webenginewidgets/spellchecker)
