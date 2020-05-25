@@ -17,8 +17,9 @@ Examples
   * [webengine](official/webengine)
     * [recipebrowser](official/webengine/recipebrowser)
   * [webenginewidgets](official/webenginewidgets)
-    * [spellchecker](official/webenginewidgets/spellchecker)
     * [maps](official/webenginewidgets/maps)
+    * [spellchecker](official/webenginewidgets/spellchecker)
+    * [webui](official/webenginewidgets/webui)
 
 * [others](others)
   * [gst_pipeline](others/gst_pipeline)

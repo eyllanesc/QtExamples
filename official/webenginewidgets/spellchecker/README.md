@@ -1,6 +1,6 @@
 ## GENERATE DICTIONARY
 
-[`qwebengine_convert_dict`](https://code.qt.io/cgit/qt/qtwebengine.git/tree/src/tools/qwebengine_convert_dict) is a tool to convert dict file to bdict that comes with QtWebEngine.
+[`qwebengine_convert_dict`](https://code.qt.io/cgit/qt/qtwebengine.git/tree/src/tools/qwebengine_convert_dict) is a tool to convert dic file to bdict that comes with QtWebEngine.
 
 Execute on console:
 
