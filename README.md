@@ -18,9 +18,10 @@ Examples
     * [recipebrowser](official/webengine/recipebrowser)
   * [webenginewidgets](official/webenginewidgets)
     * [contentmanipulation](official/webenginewidgets/contentmanipulation)
-    * [html2pdf](official/webenginewidgets/html2pdf)
     * [cookiebrowser](official/webenginewidgets/cookiebrowser)
+    * [html2pdf](official/webenginewidgets/html2pdf)
     * [maps](official/webenginewidgets/maps)
+    * [markdowneditor](official/webenginewidgets/markdowneditor)
     * [spellchecker](official/webenginewidgets/spellchecker)
     * [webui](official/webenginewidgets/webui)
 
