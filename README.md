@@ -23,6 +23,7 @@ Examples
     * [maps](official/webenginewidgets/maps)
     * [markdowneditor](official/webenginewidgets/markdowneditor)
     * [minimal](official/webenginewidgets/minimal)
+    * [printme](official/webenginewidgets/printme)
     * [spellchecker](official/webenginewidgets/spellchecker)
     * [webui](official/webenginewidgets/webui)
 
