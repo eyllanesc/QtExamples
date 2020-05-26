@@ -22,6 +22,7 @@ Examples
     * [html2pdf](official/webenginewidgets/html2pdf)
     * [maps](official/webenginewidgets/maps)
     * [markdowneditor](official/webenginewidgets/markdowneditor)
+    * [minimal](official/webenginewidgets/minimal)
     * [spellchecker](official/webenginewidgets/spellchecker)
     * [webui](official/webenginewidgets/webui)
 
