@@ -5,6 +5,8 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 
 ## Official Examples
 
+* [charts]
+  * [audio](official/charts/audio)
 * [dbus](official/dbus)
   * [pingpong](official/dbus/pingpong)
 * [multimedia](official/multimedia/)
