@@ -5,29 +5,26 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 
 ## Official Examples
 
-* [charts](official/charts)
-  * [audio](official/charts/audio)
-  * [areachart](official/charts/areachart)
-* [dbus](official/dbus)
-  * [pingpong](official/dbus/pingpong)
-* [multimedia](official/multimedia/)
-  * [audiodevices](official/multimedia/audiodevices)
-* [network](official/network)
-  * [googlesuggest](official/network/googlesuggest)
-  * [loopback](official/network/loopback)
-* [webengine](official/webengine)
-  * [recipebrowser](official/webengine/recipebrowser)
-* [webenginewidgets](official/webenginewidgets)
-  * [contentmanipulation](official/webenginewidgets/contentmanipulation)
-  * [cookiebrowser](official/webenginewidgets/cookiebrowser)
-  * [html2pdf](official/webenginewidgets/html2pdf)
-  * [maps](official/webenginewidgets/maps)
-  * [markdowneditor](official/webenginewidgets/markdowneditor)
-  * [minimal](official/webenginewidgets/minimal)
-  * [notifications](official/webenginewidgets/notifications)
-  * [printme](official/webenginewidgets/printme)
-  * [spellchecker](official/webenginewidgets/spellchecker)
-  * [webui](official/webenginewidgets/webui)
+| Name                                   | Link                                                   | PyQt5 | PySide2 |
+|----------------------------------------|--------------------------------------------------------|:-----:|:-------:|
+| [audio](official/charts/audio)         | https://doc.qt.io/qt-5/qtcharts-audio-example.html     |       |         |
+| [areachart](official/charts/areachart) | https://doc.qt.io/qt-5/qtcharts-areachart-example.html |       |         |
+| [pingpong](official/dbus/pingpong)     | https://doc.qt.io/qt-5/qtdbus-pingpong-example.html    |       |         |
+| [audiodevices](official/multimedia/audiodevices) | https://doc.qt.io/qt-5/qtmultimedia-multimedia-audiodevices-example.html |       |         |
+| [googlesuggest](official/network/googlesuggest) | https://doc.qt.io/qt-5/qtnetwork-googlesuggest-example.html |       |         |
+| [loopback](official/network/loopback) | https://doc.qt.io/qt-5/qtnetwork-loopback-example.html |       |         |
+| [recipebrowser](official/webengine/recipebrowser) | https://doc.qt.io/qt-5/qtwebengine-webengine-recipebrowser-example.html |       |         |
+| [contentmanipulation](official/webenginewidgets/contentmanipulation) | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-contentmanipulation-example.html |       |         |
+| [cookiebrowser](official/webenginewidgets/cookiebrowser) | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-cookiebrowser-example.html |       |         |
+| [html2pdf](official/webenginewidgets/html2pdf) | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-html2pdf-example.html |       |         |
+| [maps](official/webenginewidgets/maps) | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-maps-example.html |       |         |
+| [markdowneditor](official/webenginewidgets/markdowneditor) | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-markdowneditor-example.html |       |         |
+| [minimal](official/webenginewidgets/minimal) | https://doc.qt.io/qt-5.9/qtwebengine-webenginewidgets-minimal-example.html |       |         |
+| [notifications](official/webenginewidgets/notifications) | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-notifications-example.html |       |         |
+| [printme](official/webenginewidgets/printme) | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-printme-example.html |       |         |
+| [spellchecker](official/webenginewidgets/spellchecker) | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-spellchecker-example.html |       |         |
+| [webui](official/webenginewidgets/webui) | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-webui-example.html |       |         |
+
 
 ## Additional Examples
 
