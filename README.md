@@ -10,6 +10,7 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 | Qt Charts          | [audio](official/charts/audio)                                       | https://doc.qt.io/qt-5/qtcharts-audio-example.html                                   |       |         |
 |                    | [areachart](official/charts/areachart)                               | https://doc.qt.io/qt-5/qtcharts-areachart-example.html                               |       |         |
 | Qt DBus            | [pingpong](official/dbus/pingpong)                                   | https://doc.qt.io/qt-5/qtdbus-pingpong-example.html                                  |       |         |
+| QtGui              | [webui](official/gui/rasterwindow)                                   | https://doc.qt.io/qt-5/qtgui-rasterwindow-example.html                               |       |         |
 | Qt Multimedia      | [audiodevices](official/multimedia/audiodevices)                     | https://doc.qt.io/qt-5/qtmultimedia-multimedia-audiodevices-example.html             |       |         |
 | Qt Network         | [googlesuggest](official/network/googlesuggest)                      | https://doc.qt.io/qt-5/qtnetwork-googlesuggest-example.html                          |       |         |
 |                    | [loopback](official/network/loopback)                                | https://doc.qt.io/qt-5/qtnetwork-loopback-example.html                               |       |         |
@@ -24,6 +25,7 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 |                    | [printme](official/webenginewidgets/printme)                         | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-printme-example.html             |       |         |
 |                    | [spellchecker](official/webenginewidgets/spellchecker)               | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-spellchecker-example.html        |       |         |
 |                    | [webui](official/webenginewidgets/webui)                             | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-webui-example.html               |       |         |
+
 
 ## Additional Examples
 
