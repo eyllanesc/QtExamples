@@ -14,6 +14,8 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 | **Qt Multimedia**        | [audiodevices](official/multimedia/audiodevices)                     | https://doc.qt.io/qt-5/qtmultimedia-multimedia-audiodevices-example.html             |       |         |
 | **Qt Network**           | [googlesuggest](official/network/googlesuggest)                      | https://doc.qt.io/qt-5/qtnetwork-googlesuggest-example.html                          |       |         |
 |                          | [loopback](official/network/loopback)                                | https://doc.qt.io/qt-5/qtnetwork-loopback-example.html                               |       |         |
+| **Qt SerialPort**        | [cenumerator](official/serialport/cenumerator)                       | https://doc.qt.io/qt-5/qtserialport-cenumerator-example.html                         |       |         |
+|                          | [enumerator](official/serialport/enumerator)                         | https://doc.qt.io/qt-5/qtserialport-enumerator-example.html                          |       |         |
 | **Qt WebEngine**         | [recipebrowser](official/webengine/recipebrowser)                    | https://doc.qt.io/qt-5/qtwebengine-webengine-recipebrowser-example.html              |       |         |
 | **Qt WebEngine Widgets** | [contentmanipulation](official/webenginewidgets/contentmanipulation) | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-contentmanipulation-example.html |       |         |
 |                          | [cookiebrowser](official/webenginewidgets/cookiebrowser)             | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-cookiebrowser-example.html       |       |         |
@@ -26,7 +28,7 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 |                          | [spellchecker](official/webenginewidgets/spellchecker)               | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-spellchecker-example.html        |       |         |
 |                          | [webui](official/webenginewidgets/webui)                             | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-webui-example.html               |       |         |
 | **Embedded**             | [lightmaps](official/embedded/lightmaps)                             | https://code.qt.io/cgit/qt/qtbase.git/tree/examples/embedded/lightmaps               |       |         |
-|                          | [styleexample](official/embedded/styleexample)                       | https://code.qt.io/cgit/qt/qtbase.git/tree/examples/embedded/styleexample               |       |         |
+|                          | [styleexample](official/embedded/styleexample)                       | https://code.qt.io/cgit/qt/qtbase.git/tree/examples/embedded/styleexample            |       |         |
 
 
 ## Additional Examples
