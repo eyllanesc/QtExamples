@@ -29,7 +29,11 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 |                          | [webui](official/webenginewidgets/webui)                             | https://doc.qt.io/qt-5/qtwebengine-webenginewidgets-webui-example.html               |       |         |
 | **Embedded**             | [lightmaps](official/embedded/lightmaps)                             | https://code.qt.io/cgit/qt/qtbase.git/tree/examples/embedded/lightmaps               |       |         |
 |                          | [styleexample](official/embedded/styleexample)                       | https://code.qt.io/cgit/qt/qtbase.git/tree/examples/embedded/styleexample            |       |         |
-
+| **Qt Quick Demos**       | [calqlatr](official/demos/calqlatr)                                  | https://doc.qt.io/qt-5/qtdoc-demos-calqlatr-example.html                             |       |         |
+|                          | [clocks](official/demos/clocks)                                      | https://doc.qt.io/qt-5/qtdoc-demos-clocks-example.html                               |       |         |
+|                          | [coffee](official/demos/coffee)                                      | https://doc.qt.io/qt-5/qtdoc-demos-coffee-example.html                               |       |         |
+|                          | [maroon](official/demos/maroon)                                      | https://doc.qt.io/qt-5/qtdoc-demos-maroon-example.html                               |       |         |
+|                          | [photosurface](official/demos/photosurface)                          | https://doc.qt.io/qt-5/qtdoc-demos-photosurface-example.html                         |       |         |
 
 ## Additional Examples
 
