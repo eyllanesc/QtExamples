@@ -45,7 +45,7 @@ def main():
 
     initialUrl = QUrl()
     if parser.positionalArguments():
-        initialUrl = QUrl.romUserInput(
+        initialUrl = QUrl.fromUserInput(
             parser.positionalArguments()[0], QDir.currentPath(), QUrl.AssumeLocalFile
         )
         if not initialUrl.isValid():
