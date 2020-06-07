@@ -52,6 +52,7 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 | [flatstyle](official/quickcontrols2/flatstyle)             | https://doc.qt.io/qt-5/qtquickcontrols-flatstyle-example.html           |       |         |
 | [automotive](official/quickcontrols2/imagine/automotive)   | https://doc.qt.io/qt-5/qtquickcontrols-imagine-automotive-example.html  |       |         |
 | [musicplayer](official/quickcontrols2/imagine/musicplayer) | https://doc.qt.io/qt-5/qtquickcontrols-imagine-musicplayer-example.html |       |         |
+| [swipetoremove](official/quickcontrols2/swipetoremove)     | https://doc.qt.io/qt-5/qtquickcontrols-swipetoremove-example.html       |       |         |
 
 ### Qt WebEngine
 
