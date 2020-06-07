@@ -1,4 +1,3 @@
-import ctypes
 from PyQt5.QtCore import QSettings, Qt, QUrl
 from PyQt5.QtGui import QGuiApplication, QIcon
 from PyQt5.QtQml import QQmlApplicationEngine
@@ -6,9 +5,6 @@ from PyQt5.QtQml import QQmlApplicationEngine
 import Fakequickcontrols2
 
 import resources_rc  # noqa: F401
-
-qtquickcontrols2 = ctypes.CDLL("libQt5QuickControls2.so.5")
-qname = qtquickcontrols2._ZN11QQuickStyle4nameEv
 
 
 def main():
