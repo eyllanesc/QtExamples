@@ -47,9 +47,11 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 
 ## Qt Quick Controls 2
 
-| Name                                           | Link                                                          | PyQt5 | PySide2 |
-| ---------------------------------------------- | ------------------------------------------------------------- | :---: | :-----: |
-| [flatstyle](official/quickcontrols2/flatstyle) | https://doc.qt.io/qt-5/qtquickcontrols-flatstyle-example.html |       |         |
+| Name                                                       | Link                                                                    | PyQt5 | PySide2 |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------- | :---: | :-----: |
+| [flatstyle](official/quickcontrols2/flatstyle)             | https://doc.qt.io/qt-5/qtquickcontrols-flatstyle-example.html           |       |         |
+| [automotive](official/quickcontrols2/imagine/automotive)   | https://doc.qt.io/qt-5/qtquickcontrols-imagine-automotive-example.html  |       |         |
+| [musicplayer](official/quickcontrols2/imagine/musicplayer) | https://doc.qt.io/qt-5/qtquickcontrols-imagine-musicplayer-example.html |       |         |
 
 ### Qt WebEngine
 

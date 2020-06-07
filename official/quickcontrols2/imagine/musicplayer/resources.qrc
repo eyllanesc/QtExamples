@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+<file>images/album-cover.jpg</file>
+<file>qtquickcontrols2.conf</file>
+<file>musicplayer.qml</file>
+</qresource>
+</RCC>
