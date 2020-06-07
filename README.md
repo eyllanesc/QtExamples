@@ -45,6 +45,11 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 | [cenumerator](official/serialport/cenumerator) | https://doc.qt.io/qt-5/qtserialport-cenumerator-example.html |       |         |
 | [enumerator](official/serialport/enumerator)   | https://doc.qt.io/qt-5/qtserialport-enumerator-example.html  |       |         |
 
+## Qt Quick Controls 2
+
+| Name                                           | Link                                                          | PyQt5 | PySide2 |
+| ---------------------------------------------- | ------------------------------------------------------------- | :---: | :-----: |
+| [flatstyle](official/quickcontrols2/flatstyle) | https://doc.qt.io/qt-5/qtquickcontrols-flatstyle-example.html |       |         |
 
 ### Qt WebEngine
 
