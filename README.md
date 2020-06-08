@@ -59,6 +59,9 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 
 | Name                                              | Link                                                                    | PyQt5 | PySide2 |
 | ------------------------------------------------- | ----------------------------------------------------------------------- | :---: | :-----: |
+| [customdialogs](official/webengine/customdialogs) | https://doc.qt.io/qt-5/qtwebengine-webengine-customdialogs-example.html |       |         |
+| [lifecycle](official/webengine/lifecycle)         | https://doc.qt.io/qt-5/qtwebengine-webengine-lifecycle-example.html     |       |         |
+| [minimal](official/webengine/minimal)             | https://doc.qt.io/qt-5/qtwebengine-webengine-minimal-example.html       |       |         |
 | [recipebrowser](official/webengine/recipebrowser) | https://doc.qt.io/qt-5/qtwebengine-webengine-recipebrowser-example.html |       |         |
 
 ### Qt WebEngine Widgets
