@@ -5,6 +5,12 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 
 ## Official Examples
 
+### Qt Core
+
+| Name                                              | Link                                                        | PyQt5 | PySide2 |
+| ------------------------------------------------- | ----------------------------------------------------------- | :---: | :-----: |
+| [sharedmemory](official/corelib/ipc/sharedmemory) | https://doc.qt.io/qt-5/qtcore-ipc-sharedmemory-example.html |       |         |
+
 ### Qt Charts
 
 | Name                                   | Link                                                   | PyQt5 | PySide2 |
