@@ -7,9 +7,11 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 
 ### Qt Core
 
-| Name                                              | Link                                                        | PyQt5 | PySide2 |
-| ------------------------------------------------- | ----------------------------------------------------------- | :---: | :-----: |
-| [sharedmemory](official/corelib/ipc/sharedmemory) | https://doc.qt.io/qt-5/qtcore-ipc-sharedmemory-example.html |       |         |
+| Name                                                          | Link                                                              | PyQt5 | PySide2 |
+| ------------------------------------------------------------- | ----------------------------------------------------------------- | :---: | :-----: |
+| [sharedmemory](official/corelib/ipc/sharedmemory)             | https://doc.qt.io/qt-5/qtcore-ipc-sharedmemory-example.html       |       |         |
+| [localfortuneclient](official/corelib/ipc/localfortuneclient) | https://doc.qt.io/qt-5/qtcore-ipc-localfortuneclient-example.html |       |         |
+| [localfortuneserver](official/corelib/ipc/localfortuneserver) | https://doc.qt.io/qt-5/qtcore-ipc-localfortuneserver-example.html |       |         |
 
 ### Qt Charts
 
