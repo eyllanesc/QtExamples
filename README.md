@@ -15,10 +15,17 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 
 ### Qt Charts
 
-| Name                                   | Link                                                   | PyQt5 | PySide2 |
-| -------------------------------------- | ------------------------------------------------------ | :---: | :-----: |
-| [audio](official/charts/audio)         | https://doc.qt.io/qt-5/qtcharts-audio-example.html     |       |         |
-| [areachart](official/charts/areachart) | https://doc.qt.io/qt-5/qtcharts-areachart-example.html |       |         |
+| Name                                      | Link                                                          | PyQt5 | PySide2 |
+| ----------------------------------------- | ------------------------------------------------------------- | :---: | :-----: |
+| [areachart](official/charts/areachart)    | https://doc.qt.io/qt-5/qtcharts-areachart-example.html        |       |         |
+| [audio](official/charts/audio)            | https://doc.qt.io/qt-5/qtcharts-audio-example.html            |       |         |
+| [audio](official/charts/barchart)         | https://doc.qt.io/qt-5/qtcharts-barchart-example.html         |       |         |
+| [audio](official/charts/barmodelmapper)   | https://doc.qt.io/qt-5/qtcharts-barmodelmapper-example.html   |       |         |
+| [audio](official/charts/boxplotchart)     | https://doc.qt.io/qt-5/qtcharts-boxplotchart-example.html     |       |         |
+| [audio](official/charts/callout)          | https://doc.qt.io/qt-5/qtcharts-callout-example.html          |       |         |
+| [audio](official/charts/candlestickchart) | https://doc.qt.io/qt-5/qtcharts-candlestickchart-example.html |       |         |
+
+
 
 ### Qt DBus
 

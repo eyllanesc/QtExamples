@@ -1,7 +1,7 @@
 import sys
 import uuid
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore, QtWidgets
 
 from matplotlib.backends.backend_qt5agg import (
     FigureCanvas,
@@ -13,13 +13,15 @@ import numpy as np
 
 from mpl_toolkits.basemap import Basemap
 import cartopy.crs as ccrs
-import pandas as pd
-
-pd.set_option("max_columns", 6)  # Unclutter display.
 import geopandas as gpd
 import geoplot as gplt
 import geoplot.crs as gcrs
 import animatplot as amp
+
+
+import pandas as pd
+
+pd.set_option("max_columns", 6)  # Unclutter display.
 
 
 class MatplotlibApplication:

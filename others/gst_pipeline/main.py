@@ -1,4 +1,3 @@
-import os
 from PyQt5 import QtCore, QtGui, QtWidgets, QtMultimedia, QtMultimediaWidgets
 
 
