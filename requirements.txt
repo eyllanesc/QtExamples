@@ -1,0 +1,10 @@
+numpy==1.18.5
+Cartopy==0.17.0
+geopandas==0.7.0
+animatplot==0.4.1
+pandas==1.0.4
+geoplot==0.4.0
+matplotlib==3.2.1
+PyQt5==5.15.0
+PySide2==5.15.0
+sip==5.3.0
