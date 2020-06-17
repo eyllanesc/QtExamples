@@ -117,7 +117,7 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 ## Additional Examples
 
 * [gstreamer pipeline](others/gst_pipeline)
-* [matplotlib integration](others/matplotlib)
+* [Embedding matplotlib in Qt](others/matplotlib)
 
 ## Donate
 

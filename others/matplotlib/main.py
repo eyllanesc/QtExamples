@@ -3,23 +3,18 @@ import uuid
 
 from PyQt5 import QtCore, QtWidgets
 
-from matplotlib.backends.backend_qt5agg import (
-    FigureCanvas,
-    NavigationToolbar2QT as NavigationToolbar,
-)
-from matplotlib.figure import Figure
-
-import numpy as np
-
-from mpl_toolkits.basemap import Basemap
+import animatplot as amp
 import cartopy.crs as ccrs
 import geopandas as gpd
 import geoplot as gplt
 import geoplot.crs as gcrs
-import animatplot as amp
-
-
+import numpy as np
 import pandas as pd
+from matplotlib.backends.backend_qt5agg import FigureCanvas
+from matplotlib.backends.backend_qt5agg import \
+    NavigationToolbar2QT as NavigationToolbar
+from matplotlib.figure import Figure
+from mpl_toolkits.basemap import Basemap
 
 pd.set_option("max_columns", 6)  # Unclutter display.
 
