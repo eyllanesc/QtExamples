@@ -56,10 +56,9 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(splitter)
         self.resize(640, 480)
 
-        self.start(
-            "/home/eyllanesc/Documents/projects/QtExamples/official/quickcontrols2/gallery/main.py",
-            "PySide2",
-        )
+        filename = os.path.join(CURRENT_DIR, "quickcontrols2/gallery/main.py")
+
+        self.start(filename, "PySide2")
 
     def start(self, path_of_script, binding):
         self.log_edit.appendPlainText(f"Start: {path_of_script}")

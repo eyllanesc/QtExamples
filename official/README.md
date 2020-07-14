@@ -1,3 +1,26 @@
+## Prerequisites
+
+In order to provide examples for PySide2 and PyQt5 I have used [`Qt.py`](https://github.com/mottosso/Qt.py):
+
+```console
+python -m pip install Qt.py
+```
+
+In some of the examples it is necessary to use classes or functions that are not provided by PyQt5 or PySide2, so the [`qmissings`](https://github.com/eyllanesc/qmissings) module must be used, for this follow the [documentation](https://eyllanesc.github.io/qmissings/installation.html).
+
+## Conversion
+
+To convert the Qt.py examples to PyQt5 you must replace:
+
+
+| Qt.py    | PyQt5        |
+| -------- | ------------ |
+| Signal   | pyqtSignal   |
+| Slot     | pyqtSlot     |
+| Property | pyqtProperty |
+
+## Modules
+
 ### Qt Core
 
 | Name                                                 | Link                                                              |
@@ -107,6 +130,3 @@
 | [maroon](demos/maroon)             | https://doc.qt.io/qt-5/qtdoc-demos-maroon-example.html       |
 | [photosurface](demos/photosurface) | https://doc.qt.io/qt-5/qtdoc-demos-photosurface-example.html |
 
-### Aditionals
-
-In some of the examples it is necessary to use classes or functions that are not provided by PyQt5 or PySide2, so the [qmissings](https://github.com/eyllanesc/qmissings) module must be used, for this follow the [documentation](https://eyllanesc.github.io/qmissings/installation.html).
