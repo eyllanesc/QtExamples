@@ -1,6 +1,6 @@
-from PyQt5.QtCore import pyqtSlot, QBuffer, QDataStream, QSharedMemory
-from PyQt5.QtGui import QImage, QPixmap
-from PyQt5.QtWidgets import QDialog, QFileDialog, QWidget
+from Qt.QtCore import QBuffer, QDataStream, QSharedMemory, Slot
+from Qt.QtGui import QImage, QPixmap
+from Qt.QtWidgets import QDialog, QFileDialog, QWidget
 
 from dialog_ui import Ui_Dialog
 
@@ -17,7 +17,7 @@ class Dialog(QDialog):
         self.ui.loadFromSharedMemoryButton.clicked.connect(self.loadFromMemory)
         self.setWindowTitle(self.tr("SharedMemory Example"))
 
-    @pyqtSlot()
+    @Slot()
     def loadFromFile(self):
         if self.sharedMemory.isAttached():
             self.detach()
@@ -51,7 +51,7 @@ class Dialog(QDialog):
         self.sharedMemory.data()[:size] = buffer.data()[:size]
         self.sharedMemory.unlock()
 
-    @pyqtSlot()
+    @Slot()
     def loadFromMemory(self):
         if not self.sharedMemory.attach():
             self.ui.label.setText(

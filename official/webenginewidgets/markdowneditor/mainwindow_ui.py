@@ -7,7 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from Qt import QtCore, QtGui, QtWebEngineWidgets, QtWidgets
 
 
 class Ui_MainWindow(object):
@@ -75,7 +75,6 @@ class Ui_MainWindow(object):
         self.actionNew.setText(_translate("MainWindow", "&New"))
         self.actionNew.setToolTip(_translate("MainWindow", "Create new document"))
         self.actionNew.setShortcut(_translate("MainWindow", "Ctrl+N"))
-from PyQt5 import QtWebEngineWidgets
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
-from PyQt5.QtCore import QIODevice, QObject, QPointF, Qt
-from PyQt5.QtWidgets import QApplication, QMessageBox, QVBoxLayout, QWidget
-from PyQt5.QtMultimedia import QAudioDeviceInfo, QAudioFormat, QAudioInput
-from PyQt5.QtChart import QChart, QChartView, QLineSeries, QValueAxis, QXYSeries
+from Qt.QtChart import QChart, QChartView, QLineSeries, QValueAxis, QXYSeries
+from Qt.QtCore import QIODevice, QObject, QPointF, Qt
+from Qt.QtMultimedia import QAudioDeviceInfo, QAudioFormat, QAudioInput
+from Qt.QtWidgets import QApplication, QMessageBox, QVBoxLayout, QWidget
 
 
 class XYSeriesIODevice(QIODevice):

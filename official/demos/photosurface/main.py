@@ -1,16 +1,10 @@
-from PyQt5.QtCore import (
-    QCoreApplication,
-    QCommandLineParser,
-    QDir,
-    QMimeDatabase,
-    QStandardPaths,
-    QT_VERSION_STR,
-    QUrl,
-)
-from PyQt5.QtGui import QImageReader
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtQuick import QQuickWindow
-from PyQt5.QtQml import QQmlApplicationEngine, QQmlContext
+from Qt import __qt_version__
+from Qt.QtCore import (QCommandLineParser, QCoreApplication, QDir,
+                       QMimeDatabase, QStandardPaths, QUrl)
+from Qt.QtGui import QImageReader
+from Qt.QtQml import QQmlApplicationEngine, QQmlContext
+from Qt.QtQuick import QQuickWindow
+from Qt.QtWidgets import QApplication
 
 import photosurface_rc  # noqa: F401
 
@@ -35,7 +29,7 @@ def main():
 
     QCoreApplication.setApplicationName("Photosurface")
     QCoreApplication.setOrganizationName("QtProject")
-    QCoreApplication.setApplicationVersion(QT_VERSION_STR)
+    QCoreApplication.setApplicationVersion(__qt_version__)
     parser = QCommandLineParser()
     parser.setApplicationDescription("Qt Quick Demo - Photo Surface")
     parser.addHelpOption()

@@ -1,8 +1,8 @@
 from functools import singledispatch
 
-from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QWidget
-from PyQt5.QtMultimedia import QAudio, QAudioDeviceInfo, QAudioFormat
+from Qt.QtCore import Slot
+from Qt.QtMultimedia import QAudio, QAudioDeviceInfo, QAudioFormat
+from Qt.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QWidget
 
 from audiodevicesbase_ui import Ui_AudioDevicesBase
 
@@ -59,7 +59,7 @@ class AudioTest(AudioDevicesBase):
         self.deviceBox.setCurrentIndex(0)
         self.deviceChanged(0)
 
-    @pyqtSlot()
+    @Slot()
     def test(self) -> None:
         self.testResult.clear()
         if not self.m_deviceInfo.isNull():
@@ -83,7 +83,7 @@ class AudioTest(AudioDevicesBase):
         else:
             self.testResult.setText(self.tr("No Device"))
 
-    @pyqtSlot(int)
+    @Slot(int)
     def modeChanged(self, idx: int) -> None:
         self.testResult.clear()
         self.deviceBox.clear()
@@ -93,7 +93,7 @@ class AudioTest(AudioDevicesBase):
         self.deviceBox.setCurrentIndex(0)
         self.deviceChanged(0)
 
-    @pyqtSlot(int)
+    @Slot(int)
     def deviceChanged(self, idx: int) -> None:
         self.testResult.clear()
 
@@ -147,7 +147,7 @@ class AudioTest(AudioDevicesBase):
 
         self.allFormatsTable.clearContents()
 
-    @pyqtSlot()
+    @Slot()
     def populateTable(self) -> None:
         row = 0
         format = QAudioFormat()
@@ -195,7 +195,7 @@ class AudioTest(AudioDevicesBase):
 
                                 row += 1
 
-    @pyqtSlot(int)
+    @Slot(int)
     def sampleRateChanged(self, idx: int) -> None:
         try:
             rate = int(self.sampleRateBox.itemText(idx))
@@ -204,7 +204,7 @@ class AudioTest(AudioDevicesBase):
         else:
             self.m_settings.setSampleRate(rate)
 
-    @pyqtSlot(int)
+    @Slot(int)
     def channelChanged(self, idx: int) -> None:
         try:
             count = int(self.channelsBox.itemText(idx))
@@ -213,11 +213,11 @@ class AudioTest(AudioDevicesBase):
         else:
             self.m_settings.setChannelCount(count)
 
-    @pyqtSlot(int)
+    @Slot(int)
     def codecChanged(self, idx: int) -> None:
         self.m_settings.setCodec(self.codecsBox.itemText(idx))
 
-    @pyqtSlot(int)
+    @Slot(int)
     def sampleSizeChanged(self, idx: int) -> None:
         try:
             size = int(self.sampleSizesBox.itemText(idx))
@@ -226,7 +226,7 @@ class AudioTest(AudioDevicesBase):
         else:
             self.m_settings.setSampleSize(size)
 
-    @pyqtSlot(int)
+    @Slot(int)
     def sampleTypeChanged(self, idx: int) -> None:
         try:
             sample_type = int(self.sampleTypesBox.itemText(idx))
@@ -240,7 +240,7 @@ class AudioTest(AudioDevicesBase):
             elif sample_type == QAudioFormat.Float:
                 self.m_settings.setSampleType(QAudioFormat.Float)
 
-    @pyqtSlot(int)
+    @Slot(int)
     def endianChanged(self, idx: int) -> None:
         try:
             byte_order = int(self.endianBox.itemText(idx))

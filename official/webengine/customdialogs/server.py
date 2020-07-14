@@ -1,5 +1,5 @@
-from PyQt5.QtCore import pyqtSlot, QObject
-from PyQt5.QtNetwork import QHostAddress, QTcpServer
+from Qt.QtCore import QObject, Slot
+from Qt.QtNetwork import QHostAddress, QTcpServer
 
 
 class Server(QObject):
@@ -8,20 +8,20 @@ class Server(QObject):
         self.m_server = QTcpServer()
         self.m_server.newConnection.connect(self.handleNewConnection)
 
-    @pyqtSlot()
+    @Slot()
     def run(self):
         if not self.m_server.listen(QHostAddress.LocalHost, 5555):
             print(
                 f"Could not start the server -> http/proxy authentication dialog will not work. Error:{self.m_server.errorString()}"
             )
 
-    @pyqtSlot()
+    @Slot()
     def handleNewConnection(self):
         socket = self.m_server.nextPendingConnection()
         socket.disconnected.connect(socket.deleteLater)
         socket.readyRead.connect(self.handleReadReady)
 
-    @pyqtSlot()
+    @Slot()
     def handleReadReady(self):
         socket = self.sender()
         assert socket

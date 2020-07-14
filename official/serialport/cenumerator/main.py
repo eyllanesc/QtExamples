@@ -1,5 +1,6 @@
-from PyQt5.QtCore import QByteArray, QCoreApplication, QFile, QIODevice, QTextStream
-from PyQt5.QtSerialPort import QSerialPortInfo
+from Qt.QtCore import (QByteArray, QCoreApplication, QFile, QIODevice,
+                       QTextStream)
+from Qt.QtSerialPort import QSerialPortInfo
 
 
 def main():

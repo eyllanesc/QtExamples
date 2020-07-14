@@ -1,5 +1,5 @@
-from PyQt5.QtChart import QBoxSet
-from PyQt5.QtCore import QTextStream
+from Qt.QtChart import QBoxSet
+from Qt.QtCore import QTextStream
 
 
 class BoxDataReader(QTextStream):

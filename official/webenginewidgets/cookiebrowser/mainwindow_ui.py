@@ -7,7 +7,9 @@
 # WARNING! All changes made in this file will be lost!
 
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from Qt import QtCore, QtGui, QtWebEngineWidgets, QtWidgets
+
+import cookiebrowser_rc
 
 
 class Ui_MainWindow(object):
@@ -101,8 +103,6 @@ class Ui_MainWindow(object):
         self.label.setText(_translate("MainWindow", "Cookies:"))
         self.m_newButton.setText(_translate("MainWindow", "New"))
         self.m_deleteAllButton.setText(_translate("MainWindow", "Delete All"))
-from PyQt5 import QtWebEngineWidgets
-import cookiebrowser_rc
 
 
 if __name__ == "__main__":

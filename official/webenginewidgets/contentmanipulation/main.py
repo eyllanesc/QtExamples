@@ -1,14 +1,7 @@
-from PyQt5.QtCore import pyqtSlot, QCoreApplication, QFile, QIODevice, Qt, QUrl
-from PyQt5.QtWidgets import (
-    QAction,
-    QApplication,
-    QLineEdit,
-    QMainWindow,
-    QSizePolicy,
-    QStyle,
-    QTextEdit,
-)
-from PyQt5.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
+from Qt.QtCore import QCoreApplication, QFile, QIODevice, Qt, QUrl, Slot
+from Qt.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
+from Qt.QtWidgets import (QAction, QApplication, QLineEdit, QMainWindow,
+                          QSizePolicy, QStyle, QTextEdit)
 
 import jquery_rc  # noqa: F401
 
@@ -78,36 +71,36 @@ class MainWindow(QMainWindow):
 
         self.setCentralWidget(self.view)
 
-    @pyqtSlot()
+    @Slot()
     def adjustLocation(self):
         self.locationEdit.setText(self.view.url().toString())
 
-    @pyqtSlot()
+    @Slot()
     def changeLocation(self):
         url = QUrl.fromUserInput(self.locationEdit.text())
         self.view.load(url)
         self.view.setFocus()
 
-    @pyqtSlot()
+    @Slot()
     def adjustTitle(self):
         if self.progress <= 0 or self.progress >= 100:
             self.setWindowTitle(self.view.title())
         else:
             self.setWindowTitle("%s (%2d)" % (self.view.title(), self.progress))
 
-    @pyqtSlot(int)
+    @Slot(int)
     def setProgress(self, p):
         self.progress = p
         self.adjustTitle()
 
-    @pyqtSlot()
+    @Slot()
     def finishLoading(self):
         self.progress = 100
         self.adjustTitle()
         self.view.page().runJavaScript(self.jQuery)
         self.rotateImages(self.rotateAction.isChecked())
 
-    @pyqtSlot()
+    @Slot()
     def viewSource(self):
         self.textEdit = QTextEdit()
         self.textEdit.setAttribute(Qt.WA_DeleteOnClose)
@@ -117,12 +110,12 @@ class MainWindow(QMainWindow):
 
         self.view.page().toHtml(self.textEdit.setPlainText)
 
-    @pyqtSlot()
+    @Slot()
     def highlightAllLinks(self):
         code = "qt.jQuery('a').each( function () { qt.jQuery(this).css('background-color', 'yellow') } )"
         self.view.page().runJavaScript(code)
 
-    @pyqtSlot(bool)
+    @Slot(bool)
     def rotateImages(self, invert):
         code = ""
         if invert:
@@ -131,22 +124,22 @@ class MainWindow(QMainWindow):
             code = "qt.jQuery('img').each( function () { qt.jQuery(this).css('transition', 'transform 2s'); qt.jQuery(this).css('transform', 'rotate(0deg)') } )"
         self.view.page().runJavaScript(code)
 
-    @pyqtSlot()
+    @Slot()
     def removeGifImages(self):
         code = "qt.jQuery('[src*=gif]').remove()"
         self.view.page().runJavaScript(code)
 
-    @pyqtSlot()
+    @Slot()
     def removeInlineFrames(self):
         code = "qt.jQuery('iframe').remove()"
         self.view.page().runJavaScript(code)
 
-    @pyqtSlot()
+    @Slot()
     def removeObjectElements(self):
         code = "qt.jQuery('object').remove()"
         self.view.page().runJavaScript(code)
 
-    @pyqtSlot()
+    @Slot()
     def removeEmbeddedElements(self):
         code = "qt.jQuery('embed').remove()"
         self.view.page().runJavaScript(code)

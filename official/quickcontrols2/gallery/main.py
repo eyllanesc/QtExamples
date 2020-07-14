@@ -1,8 +1,10 @@
-from PyQt5.QtCore import QSettings, Qt, QUrl
-from PyQt5.QtGui import QGuiApplication, QIcon
-from PyQt5.QtQml import QQmlApplicationEngine
 
-import Fakequickcontrols2
+
+from Qt.QtCore import QSettings, Qt, QUrl
+from Qt.QtGui import QGuiApplication, QIcon
+from Qt.QtQml import QQmlApplicationEngine
+
+from qmissings.QtQuickControls2 import QQuickStyle
 
 import resources_rc  # noqa: F401
 
@@ -20,15 +22,15 @@ def main():
 
     settings = QSettings()
 
-    style = Fakequickcontrols2.name()
+    style = QQuickStyle.name()
     if style:
         settings.setValue("style", style)
     else:
-        Fakequickcontrols2.setStyle(settings.value("style"))
+        QQuickStyle.setStyle(settings.value("style"))
 
     engine = QQmlApplicationEngine()
     engine.rootContext().setContextProperty(
-        "availableStyles", Fakequickcontrols2.availableStyles()
+        "availableStyles", QQuickStyle.availableStyles()
     )
     engine.load(QUrl("qrc:/gallery.qml"))
     if not engine.rootObjects():

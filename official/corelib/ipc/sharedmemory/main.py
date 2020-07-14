@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication
+from Qt.QtWidgets import QApplication
 
 from dialog import Dialog
 

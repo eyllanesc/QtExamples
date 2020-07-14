@@ -1,6 +1,6 @@
-from PyQt5.QtCore import Qt, QUrl
-from PyQt5.QtGui import QFontDatabase, QGuiApplication
-from PyQt5.QtQml import QQmlApplicationEngine
+from Qt.QtCore import Qt, QUrl
+from Qt.QtGui import QFontDatabase, QGuiApplication
+from Qt.QtQml import QQmlApplicationEngine
 
 import resources_rc  # noqa: F401
 

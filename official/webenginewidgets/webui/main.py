@@ -1,11 +1,9 @@
-from PySide2.QtCore import QByteArray, QCoreApplication, QFile, QIODevice, Qt, QUrl
-from PySide2.QtWidgets import QApplication
-from PySide2.QtWebEngineCore import (
-    QWebEngineUrlRequestJob,
-    QWebEngineUrlScheme,
-    QWebEngineUrlSchemeHandler,
-)
-from PySide2.QtWebEngineWidgets import QWebEnginePage, QWebEngineProfile, QWebEngineView
+from Qt.QtCore import QByteArray, QCoreApplication, QFile, QIODevice, Qt, QUrl
+from Qt.QtWebEngineCore import (QWebEngineUrlRequestJob, QWebEngineUrlScheme,
+                                QWebEngineUrlSchemeHandler)
+from Qt.QtWebEngineWidgets import (QWebEnginePage, QWebEngineProfile,
+                                   QWebEngineView)
+from Qt.QtWidgets import QApplication
 
 import webui_rc  # noqa: F401
 

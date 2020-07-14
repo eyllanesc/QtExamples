@@ -1,16 +1,8 @@
-from PyQt5.QtCore import pyqtSlot, QDataStream, Qt, QTimer
-from PyQt5.QtGui import QGuiApplication
-from PyQt5.QtWidgets import (
-    QDialog,
-    QDialogButtonBox,
-    QGridLayout,
-    QLabel,
-    QLineEdit,
-    QMessageBox,
-    QPushButton,
-    QWidget,
-)
-from PyQt5.QtNetwork import QLocalSocket
+from Qt.QtCore import QDataStream, Qt, QTimer, Slot
+from Qt.QtGui import QGuiApplication
+from Qt.QtNetwork import QLocalSocket
+from Qt.QtWidgets import (QDialog, QDialogButtonBox, QGridLayout, QLabel,
+                          QLineEdit, QMessageBox, QPushButton, QWidget)
 
 
 class Client(QDialog):
@@ -29,7 +21,7 @@ class Client(QDialog):
                 "This examples requires that you run the Local Fortune Server example as well."
             )
         )
-        self.socket = QLocalSocket(self)
+        self.socket = QLocalSocket()
 
         self.setWindowFlags(self.windowFlags() & ~Qt.WindowContextHelpButtonHint)
         hostLabel = QLabel(self.tr("&Server name:"))
@@ -63,14 +55,14 @@ class Client(QDialog):
         self.setWindowTitle(QGuiApplication.applicationDisplayName())
         self.hostLineEdit.setFocus()
 
-    @pyqtSlot()
+    @Slot()
     def requestNewFortune(self):
         self.getFortuneButton.setEnabled(False)
         self.blockSize = 0
         self.socket.abort()
         self.socket.connectToServer(self.hostLineEdit.text())
 
-    @pyqtSlot()
+    @Slot()
     def readFortune(self):
         if self.blockSize == 0:
             # Relies on the fact that QDataStream serializes a quint32 into
@@ -84,16 +76,16 @@ class Client(QDialog):
 
         nextFortune = ""
         nextFortune = self._in.readQString()
-        
+
         if nextFortune == self.currentFortune:
             QTimer.singleShot(0, self.requestNewFortune)
             return
-        
+
         currentFortune = nextFortune
         self.statusLabel.setText(currentFortune)
         self.getFortuneButton.setEnabled(True)
 
-    @pyqtSlot(QLocalSocket.LocalSocketError)
+    @Slot(QLocalSocket.LocalSocketError)
     def displayError(self, socketError):
         if socketError == QLocalSocket.ServerNotFoundError:
 
@@ -129,6 +121,6 @@ class Client(QDialog):
 
         self.getFortuneButton.setEnabled(True)
 
-    @pyqtSlot()
+    @Slot()
     def enableGetFortuneButton(self):
         self.getFortuneButton.setEnabled(bool(self.hostLineEdit.ext()))

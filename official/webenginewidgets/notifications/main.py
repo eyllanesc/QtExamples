@@ -1,20 +1,11 @@
-from PyQt5.QtCore import pyqtSlot, QCoreApplication, QPoint, Qt, QTimer, QUrl
-from PyQt5.QtGui import QDesktopServices, QPixmap
-from PyQt5.QtWidgets import (
-    QApplication,
-    QHBoxLayout,
-    QLabel,
-    QPushButton,
-    QSizePolicy,
-    QSpacerItem,
-    QVBoxLayout,
-    QWidget,
-)
-from PyQt5.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
-
-import sip
+from Qt.QtCore import QCoreApplication, QPoint, Qt, QTimer, QUrl, Slot
+from Qt.QtGui import QDesktopServices, QPixmap
+from Qt.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
+from Qt.QtWidgets import (QApplication, QHBoxLayout, QLabel, QPushButton,
+                          QSizePolicy, QSpacerItem, QVBoxLayout, QWidget)
 
 import data_rc  # noqa: F401
+import sip
 
 
 class WebEnginePage(QWebEnginePage):
@@ -104,7 +95,7 @@ class NotificationPopup(QWidget):
             )
         )
 
-    @pyqtSlot()
+    @Slot()
     def onClosed(self):
         self.hide()
         self.notification.close()

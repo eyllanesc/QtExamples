@@ -1,25 +1,11 @@
 import math
 import typing
 
-from PyQt5.QtCore import (
-    pyqtSignal,
-    pyqtSlot,
-    QObject,
-    QPoint,
-    QPointF,
-    QRect,
-    QStandardPaths,
-    Qt,
-    QUrl,
-)
-from PyQt5.QtGui import QImage, QPainter, QPixmap
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtNetwork import (
-    QNetworkAccessManager,
-    QNetworkDiskCache,
-    QNetworkReply,
-    QNetworkRequest,
-)
+from Qt.QtCore import (QObject, QPoint, QPointF, QRect, QStandardPaths, Qt,
+                       QUrl, Signal, Slot)
+from Qt.QtGui import QImage, QPainter, QPixmap
+from Qt.QtNetwork import (QNetworkAccessManager, QNetworkDiskCache,
+                          QNetworkReply, QNetworkRequest)
 
 
 def qHash(p: QPoint) -> int:
@@ -128,9 +114,9 @@ class SlippyMap(QObject):
         self.longitude = longitudeFromTile(center.x(), self.zoom)
         self.invalidate()
 
-    updated = pyqtSignal(QRect)
+    updated = Signal(QRect)
 
-    @pyqtSlot(QNetworkReply)
+    @Slot(QNetworkReply)
     def handleNetworkData(self, reply: QNetworkReply) -> None:
         img = QImage()
         tp = reply.request().attribute(QNetworkRequest.User)
@@ -153,7 +139,7 @@ class SlippyMap(QObject):
 
         self.download()
 
-    @pyqtSlot()
+    @Slot()
     def download(self):
         grab = QPoint(0, 0)
         for x in range(self.m_tilesRect.width() + 1):

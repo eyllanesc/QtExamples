@@ -1,17 +1,10 @@
 import random
 
-from PyQt5.QtCore import pyqtSlot, QByteArray, QDataStream, QIODevice, Qt, QTimer
-from PyQt5.QtGui import QGuiApplication
-from PyQt5.QtWidgets import (
-    QDialog,
-    QHBoxLayout,
-    QLabel,
-    QMessageBox,
-    QPushButton,
-    QVBoxLayout,
-    QWidget,
-)
-from PyQt5.QtNetwork import QLocalServer
+from Qt.QtCore import QByteArray, QDataStream, QIODevice, Qt, QTimer, Slot
+from Qt.QtGui import QGuiApplication
+from Qt.QtNetwork import QLocalServer
+from Qt.QtWidgets import (QDialog, QHBoxLayout, QLabel, QMessageBox,
+                          QPushButton, QVBoxLayout, QWidget)
 
 
 class Server(QDialog):
@@ -65,7 +58,7 @@ class Server(QDialog):
 
         self.setWindowTitle(QGuiApplication.applicationDisplayName())
 
-    @pyqtSlot()
+    @Slot()
     def sendFortune(self):
         block = QByteArray()
         out = QDataStream(block, QIODevice.WriteOnly)

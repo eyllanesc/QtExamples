@@ -1,15 +1,9 @@
 import sys
 
-from PyQt5.QtCore import (
-    pyqtSlot,
-    QCommandLineParser,
-    QCoreApplication,
-    QObject,
-    QT_VERSION_STR,
-    QUrl,
-)
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtWebEngineWidgets import QWebEnginePage
+from Qt import __qt_version__
+from Qt.QtCore import QCommandLineParser, QCoreApplication, QObject, QUrl, Slot
+from Qt.QtWebEngineWidgets import QWebEnginePage
+from Qt.QtWidgets import QApplication
 
 
 class Html2PdfConverter(QObject):
@@ -26,7 +20,7 @@ class Html2PdfConverter(QObject):
         self.m_page.load(QUrl.fromUserInput(self.m_inputPath))
         return QApplication.exec_()
 
-    @pyqtSlot(bool)
+    @Slot(bool)
     def loadFinished(self, ok: bool):
         if not ok:
             sys.stderr.write("failed to load URL '%s'" % (self.m_inputPath,))
@@ -34,7 +28,7 @@ class Html2PdfConverter(QObject):
             return
         self.m_page.printToPdf(self.m_outputPath)
 
-    @pyqtSlot(str, bool)
+    @Slot(str, bool)
     def pdfPrintingFinished(self, filePath: str, success: bool):
         if not success:
             sys.stderr.write("failed to print to output file '%s'" % (filePath,))
@@ -48,7 +42,7 @@ def main():
 
     QCoreApplication.setOrganizationName("QtExamples")
     QCoreApplication.setApplicationName("html2pdf")
-    QCoreApplication.setApplicationVersion(QT_VERSION_STR)
+    QCoreApplication.setApplicationVersion(__qt_version__)
 
     parser = QCommandLineParser()
     parser.setApplicationDescription(

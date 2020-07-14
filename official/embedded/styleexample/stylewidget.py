@@ -1,8 +1,8 @@
-from PyQt5.QtCore import pyqtSlot, QFile, QIODevice
-from PyQt5.QtWidgets import qApp, QFrame, QWidget
+from Qt.QtCore import QFile, QIODevice, Slot
+from Qt.QtWidgets import QApplication, QFrame, QWidget
 
-from stylewidget_ui import Ui_StyleWidget
 import styleexample_rc  # noqa: F401
+from stylewidget_ui import Ui_StyleWidget
 
 
 class StyleWidget(QFrame):
@@ -11,11 +11,11 @@ class StyleWidget(QFrame):
         self.m_ui = Ui_StyleWidget()
         self.m_ui.setupUi(self)
 
-    @pyqtSlot()
+    @Slot()
     def on_close_clicked(self):
         self.close()
 
-    @pyqtSlot()
+    @Slot()
     def on_blueStyle_clicked(self):
         styleSheet = QFile(":/files/blue.qss")
 
@@ -23,9 +23,9 @@ class StyleWidget(QFrame):
             print("Unable to open :/files/blue.qss")
             return
 
-        qApp.setStyleSheet(styleSheet.readAll().data().decode())
+        QApplication.instance().setStyleSheet(styleSheet.readAll().data().decode())
 
-    @pyqtSlot()
+    @Slot()
     def on_khakiStyle_clicked(self):
         styleSheet = QFile(":/files/khaki.qss")
 
@@ -33,9 +33,9 @@ class StyleWidget(QFrame):
             print("Unable to open :/files/khaki.qss")
             return
 
-        qApp.setStyleSheet(styleSheet.readAll().data().decode())
+        QApplication.instance().setStyleSheet(styleSheet.readAll().data().decode())
 
-    @pyqtSlot()
+    @Slot()
     def on_noStyle_clicked(self):
         styleSheet = QFile(":/files/nostyle.qss")
 
@@ -43,9 +43,9 @@ class StyleWidget(QFrame):
             print("Unable to open :/files/nostyle.qss")
             return
 
-        qApp.setStyleSheet(styleSheet.readAll().data().decode())
+        QApplication.instance().setStyleSheet(styleSheet.readAll().data().decode())
 
-    @pyqtSlot()
+    @Slot()
     def on_transparentStyle_clicked(self):
         styleSheet = QFile(":/files/transparent.qss")
 
@@ -53,4 +53,4 @@ class StyleWidget(QFrame):
             print("Unable to open :/files/transparent.qss")
             return
 
-        qApp.setStyleSheet(styleSheet.readAll().data().decode())
+        QApplication.instance().setStyleSheet(styleSheet.readAll().data().decode())

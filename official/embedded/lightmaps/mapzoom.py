@@ -1,6 +1,6 @@
-from PyQt5.QtCore import pyqtSlot, QUrl
-from PyQt5.QtGui import QDesktopServices
-from PyQt5.QtWidgets import QAction, QMainWindow, QWidget
+from Qt.QtCore import QUrl, Slot
+from Qt.QtGui import QDesktopServices
+from Qt.QtWidgets import QAction, QMainWindow, QWidget
 
 from lightmaps import LightMaps
 
@@ -37,18 +37,18 @@ class MapZoom(QMainWindow):
 
         self.setWindowTitle(self.tr("Light Maps"))
 
-    @pyqtSlot()
+    @Slot()
     def chooseOslo(self):
         self.map.setCenter(59.9138204, 10.7387413)
 
-    @pyqtSlot()
+    @Slot()
     def chooseBerlin(self):
         self.map.setCenter(52.52958999943302, 13.383053541183472)
 
-    @pyqtSlot()
+    @Slot()
     def chooseJakarta(self):
         self.map.setCenter(-6.211544, 106.845172)
 
-    @pyqtSlot()
+    @Slot()
     def aboutOsm(self):
         QDesktopServices.openUrl(QUrl("http://www.openstreetmap.org"))

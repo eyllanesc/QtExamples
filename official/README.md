@@ -106,3 +106,5 @@
 | [coffee](demos/coffee)             | https://doc.qt.io/qt-5/qtdoc-demos-coffee-example.html       |
 | [maroon](demos/maroon)             | https://doc.qt.io/qt-5/qtdoc-demos-maroon-example.html       |
 | [photosurface](demos/photosurface) | https://doc.qt.io/qt-5/qtdoc-demos-photosurface-example.html |
+
+In some of the examples it is necessary to use classes or functions that are not provided by PyQt5 or PySide2, so the [qmissings](https://github.com/eyllanesc/qmissings) module must be used, for this follow the [documentation](https://eyllanesc.github.io/qmissings/installation.html).

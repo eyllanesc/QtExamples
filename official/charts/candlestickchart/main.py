@@ -1,7 +1,7 @@
-from PyQt5.QtChart import QCandlestickSeries, QChart, QChartView
-from PyQt5.QtCore import QDateTime, QFile, QIODevice, Qt
-from PyQt5.QtGui import QColor, QPainter
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from Qt.QtChart import QCandlestickSeries, QChart, QChartView
+from Qt.QtCore import QDateTime, QFile, QIODevice, Qt
+from Qt.QtGui import QColor, QPainter
+from Qt.QtWidgets import QApplication, QMainWindow
 
 import candlestickdata_rc  # noqa: F401
 from candlestickdatareader import CandlestickDataReader

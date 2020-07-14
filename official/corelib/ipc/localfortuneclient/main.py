@@ -1,5 +1,5 @@
-from PyQt5.QtGui import QGuiApplication
-from PyQt5.QtWidgets import QApplication
+from Qt.QtGui import QGuiApplication
+from Qt.QtWidgets import QApplication
 
 from client import Client
 

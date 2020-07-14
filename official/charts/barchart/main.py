@@ -1,8 +1,8 @@
-from PyQt5.QtChart import (QBarCategoryAxis, QBarSeries, QBarSet, QChart,
-                           QChartView, QValueAxis)
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPainter
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from Qt.QtChart import (QBarCategoryAxis, QBarSeries, QBarSet, QChart,
+                        QChartView, QValueAxis)
+from Qt.QtCore import Qt
+from Qt.QtGui import QPainter
+from Qt.QtWidgets import QApplication, QMainWindow
 
 
 def main():

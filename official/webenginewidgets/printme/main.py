@@ -1,16 +1,9 @@
-from PyQt5.QtCore import (
-    pyqtSlot,
-    QCoreApplication,
-    QEventLoop,
-    QObject,
-    QPointF,
-    Qt,
-    QUrl,
-)
-from PyQt5.QtGui import QKeySequence, QPainter
-from PyQt5.QtWidgets import QApplication, QDialog, QShortcut
-from PyQt5.QtPrintSupport import QPrintDialog, QPrinter, QPrintPreviewDialog
-from PyQt5.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
+from Qt.QtCore import (QCoreApplication, QEventLoop, QObject, QPointF, Qt,
+                       QUrl, Slot)
+from Qt.QtGui import QKeySequence, QPainter
+from Qt.QtPrintSupport import QPrintDialog, QPrinter, QPrintPreviewDialog
+from Qt.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
+from Qt.QtWidgets import QApplication, QDialog, QShortcut
 
 import data_rc  # noqa: F401
 
@@ -26,7 +19,7 @@ class PrintHandler(QObject):
         self.m_page = page
         self.m_page.printRequested.connect(self.printPreview)
 
-    @pyqtSlot()
+    @Slot()
     def print(self):
         printer = QPrinter(QPrinter.HighResolution)
         dialog = QPrintDialog(printer, self.m_page.view())
@@ -34,7 +27,7 @@ class PrintHandler(QObject):
             return
         self.printDocument(printer)
 
-    @pyqtSlot()
+    @Slot()
     def printPreview(self):
         if not self.m_page:
             return
@@ -47,7 +40,7 @@ class PrintHandler(QObject):
         preview.exec()
         self.m_inPrintPreview = False
 
-    @pyqtSlot(QPrinter)
+    @Slot(QPrinter)
     def printDocument(self, printer):
         loop = QEventLoop()
         result = False

@@ -1,13 +1,11 @@
-from PyQt5.QtCore import QCoreApplication, Qt, QTimer, QUrl
-from PyQt5.QtGui import QGuiApplication
-from PyQt5.QtNetwork import QNetworkProxy
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtQml import QQmlApplicationEngine
-
-from server import Server
+from Qt.QtCore import QCoreApplication, Qt, QTimer, QUrl
+from Qt.QtGui import QGuiApplication
+from Qt.QtNetwork import QNetworkProxy
+from Qt.QtQml import QQmlApplicationEngine
+from Qt.QtWidgets import QApplication
 
 import customdialogs_rc  # noqa: F401
-
+from server import Server
 
 QT_NO_WIDGETS = True
 

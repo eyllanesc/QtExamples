@@ -1,27 +1,17 @@
-from PyQt5.QtCore import (
-    pyqtProperty,
-    pyqtSignal,
-    pyqtSlot,
-    QCoreApplication,
-    QDir,
-    QFile,
-    QIODevice,
-    QObject,
-    Qt,
-    QTextStream,
-    QUrl,
-)
-from PyQt5.QtGui import QDesktopServices, QFontDatabase
-from PyQt5.QtWidgets import QApplication, QFileDialog, QMainWindow, QMessageBox, QWidget
-from PyQt5.QtWebEngineWidgets import QWebEnginePage
-from PyQt5.QtWebChannel import QWebChannel
+from Qt.QtCore import (Property, QCoreApplication, QDir, QFile, QIODevice,
+                       QObject, Qt, QTextStream, QUrl, Signal, Slot)
+from Qt.QtGui import QDesktopServices, QFontDatabase
+from Qt.QtWebChannel import QWebChannel
+from Qt.QtWebEngineWidgets import QWebEnginePage
+from Qt.QtWidgets import (QApplication, QFileDialog, QMainWindow, QMessageBox,
+                          QWidget)
 
-from mainwindow_ui import Ui_MainWindow
 import markdowneditor_rc  # noqa: F401
+from mainwindow_ui import Ui_MainWindow
 
 
 class Document(QObject):
-    textChanged = pyqtSignal(str)
+    textChanged = Signal(str)
 
     def __init__(self, parent: QObject = None):
         super().__init__(parent)
@@ -36,7 +26,7 @@ class Document(QObject):
         self.m_text = text
         self.textChanged.emit(text)
 
-    text = pyqtProperty(str, fget=text, fset=setText, notify=textChanged)
+    text = Property(str, fget=text, fset=setText, notify=textChanged)
 
 
 class PreviewPage(QWebEnginePage):
@@ -106,7 +96,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def isModified(self) -> bool:
         return self.editor.document().isModified()
 
-    @pyqtSlot()
+    @Slot()
     def onFileNew(self):
         if self.isModified():
             button = QMessageBox.question(
@@ -123,7 +113,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.editor.setPlainText(self.tr("## New document"))
         self.editor.document().setModified(False)
 
-    @pyqtSlot()
+    @Slot()
     def onFileOpen(self):
         if self.isModified():
             button = QMessageBox.question(
@@ -144,7 +134,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         self.openFile(path)
 
-    @pyqtSlot()
+    @Slot()
     def onFileSave(self):
         if not self.m_filePath:
             self.onFileSaveAs()
@@ -167,7 +157,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         self.editor.document().setModified(False)
 
-    @pyqtSlot()
+    @Slot()
     def onFileSaveAs(self):
         path, _ = QFileDialog.getSaveFileName(
             self,
@@ -180,7 +170,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.m_filePath = path
         self.onFileSave()
 
-    @pyqtSlot()
+    @Slot()
     def onExit(self):
         if self.isModified():
             button = QMessageBox.question(

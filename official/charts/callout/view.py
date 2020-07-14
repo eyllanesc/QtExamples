@@ -1,15 +1,16 @@
-from PyQt5.QtChart import QChart, QLineSeries, QSplineSeries
-from PyQt5.QtCore import QPoint, QRect, QRectF, QSizeF, Qt
-from PyQt5.QtGui import QPainter
-from PyQt5.QtWidgets import (QGraphicsScene, QGraphicsSimpleTextItem,
-                             QGraphicsView)
+from Qt.QtChart import QChart, QLineSeries, QSplineSeries
+from Qt.QtCore import QPoint, QRect, QRectF, QSizeF, Qt
+from Qt.QtGui import QPainter
+from Qt.QtWidgets import QGraphicsScene, QGraphicsSimpleTextItem, QGraphicsView
 
 from callout import Callout
 
 
 class View(QGraphicsView):
     def __init__(self, parent=None):
-        super().__init__(QGraphicsScene(), parent)
+        super().__init__(parent)
+        scene = QGraphicsScene(self)
+        self.setScene(scene)
         self.m_tooltip = None
         self.m_callouts = []
 

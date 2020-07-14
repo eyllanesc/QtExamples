@@ -1,6 +1,6 @@
-from PyQt5.QtCore import QCoreApplication, Qt, QUrl
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtQml import QQmlApplicationEngine
+from Qt.QtCore import QCoreApplication, Qt, QUrl
+from Qt.QtQml import QQmlApplicationEngine
+from Qt.QtWidgets import QApplication
 
 import resources_rc  # noqa: F401
 

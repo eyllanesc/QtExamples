@@ -1,6 +1,6 @@
-from PyQt5.QtCore import QCoreApplication, Qt, QUrl
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtWebEngineWidgets import QWebEngineView
+from Qt.QtCore import QCoreApplication, Qt, QUrl
+from Qt.QtWebEngineWidgets import QWebEngineView
+from Qt.QtWidgets import QApplication
 
 
 def commandLineUrlArgument() -> QUrl:

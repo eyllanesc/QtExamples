@@ -1,16 +1,7 @@
-from PyQt5.QtCore import pyqtSlot, QBasicTimer, QPoint, QRect, QSize, Qt, QTimerEvent
-from PyQt5.QtGui import (
-    QColor,
-    QKeyEvent,
-    QMouseEvent,
-    QPainter,
-    QPainterPath,
-    QPaintEvent,
-    QPixmap,
-    QRadialGradient,
-    QResizeEvent,
-)
-from PyQt5.QtWidgets import QWidget
+from Qt.QtCore import QBasicTimer, QPoint, QRect, QSize, Qt, QTimerEvent, Slot
+from Qt.QtGui import (QColor, QKeyEvent, QMouseEvent, QPainter, QPainterPath,
+                      QPaintEvent, QPixmap, QRadialGradient, QResizeEvent)
+from Qt.QtWidgets import QWidget
 
 from slippymap import SlippyMap
 
@@ -51,7 +42,7 @@ class LightMaps(QWidget):
         self.m_largeMap.longitude = lng
         self.m_largeMap.invalidate()
 
-    @pyqtSlot()
+    @Slot()
     def toggleNightMode(self) -> None:
         self.invert = not self.invert
         self.update()
@@ -218,6 +209,6 @@ class LightMaps(QWidget):
                 self.dragPos += delta
                 self.update()
 
-    @pyqtSlot(QRect)
+    @Slot(QRect)
     def updateMap(self, r):
         self.update(r)

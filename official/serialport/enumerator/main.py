@@ -1,6 +1,6 @@
-from PyQt5.QtCore import QObject
-from PyQt5.QtWidgets import QApplication, QLabel, QScrollArea, QVBoxLayout, QWidget
-from PyQt5.QtSerialPort import QSerialPortInfo
+from Qt.QtSerialPort import QSerialPortInfo
+from Qt.QtWidgets import (QApplication, QLabel, QScrollArea, QVBoxLayout,
+                          QWidget)
 
 
 def main():

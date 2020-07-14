@@ -1,15 +1,6 @@
-from PyQt5.QtCore import QEvent, QRect, QRectF, Qt
-from PyQt5.QtGui import (
-    QBackingStore,
-    QExposeEvent,
-    QGuiApplication,
-    QGradient,
-    QPaintDevice,
-    QPainter,
-    QRegion,
-    QResizeEvent,
-    QWindow,
-)
+from Qt.QtCore import QEvent, QRect, QRectF, Qt
+from Qt.QtGui import (QBackingStore, QExposeEvent, QGradient, QGuiApplication,
+                      QPaintDevice, QPainter, QRegion, QResizeEvent, QWindow)
 
 
 class RasterWindow(QWindow):

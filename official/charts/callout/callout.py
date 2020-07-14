@@ -1,6 +1,6 @@
-from PyQt5.QtCore import QPoint, QPointF, QRect, QRectF, Qt
-from PyQt5.QtGui import QColor, QFont, QFontMetrics, QPainterPath
-from PyQt5.QtWidgets import QGraphicsItem
+from Qt.QtCore import QPoint, QPointF, QRect, QRectF, Qt
+from Qt.QtGui import QColor, QFont, QFontMetrics, QPainterPath
+from Qt.QtWidgets import QGraphicsItem
 
 
 class Callout(QGraphicsItem):

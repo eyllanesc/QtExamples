@@ -1,9 +1,4 @@
 {
-    "[python]": {
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true
-        }
-    },
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
         "--max-line-length=120"
@@ -18,6 +13,5 @@
             "strings": true
         },
     },
-    "cmake.configureOnOpen": true,
     "python.linting.pylintEnabled": false,
 }

@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5 import QtCore, QtGui, QtWidgets, QtNetwork
+from Qt import QtCore, QtGui, QtNetwork, QtWidgets
 
 gsuggestUrl = "http://google.com/complete/search?output=toolbar&q=%s"
 gsearchUrl = "http://www.google.com/search?q=%s"
@@ -98,7 +98,7 @@ class GSuggestCompletion(QtCore.QObject):
         self.popup.setFocus()
         self.popup.show()
 
-    @QtCore.pyqtSlot()
+    @QtCore.Slot()
     def doneCompletion(self):
         self.timer.stop()
         self.popup.hide()
@@ -108,17 +108,17 @@ class GSuggestCompletion(QtCore.QObject):
             self.editor.setText(item.text(0))
             self.editor.returnPressed.emit()
 
-    @QtCore.pyqtSlot()
+    @QtCore.Slot()
     def preventSuggest(self):
         self.timer.stop()
 
-    @QtCore.pyqtSlot()
+    @QtCore.Slot()
     def autoSuggest(self):
         text = self.editor.text()
         url = gsuggestUrl % (text,)
         self.networkManager.get(QtNetwork.QNetworkRequest(QtCore.QUrl(url)))
 
-    @QtCore.pyqtSlot("QNetworkReply*")
+    @QtCore.Slot("QNetworkReply*")
     def handleNetworkData(self, networkReply):
         url = networkReply.url()
         if networkReply.error() == QtNetwork.QNetworkReply.NoError:
@@ -148,7 +148,7 @@ class SearchBox(QtWidgets.QLineEdit):
         self.resize(400, self.height())
         self.setFocus()
 
-    @QtCore.pyqtSlot()
+    @QtCore.Slot()
     def doSearch(self):
         self.completer.preventSuggest()
         url = gsearchUrl % (self.text(),)

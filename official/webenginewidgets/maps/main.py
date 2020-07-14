@@ -1,6 +1,6 @@
-from PyQt5.QtCore import pyqtSlot, QCoreApplication, Qt, QUrl
-from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
-from PyQt5.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
+from Qt.QtCore import QCoreApplication, Qt, QUrl, Slot
+from Qt.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
+from Qt.QtWidgets import QApplication, QMainWindow, QMessageBox
 
 
 class MainWindow(QMainWindow):
@@ -13,7 +13,7 @@ class MainWindow(QMainWindow):
         page.featurePermissionRequested.connect(self.on_featurePermissionRequested)
         page.load(QUrl("https://maps.google.com"))
 
-    @pyqtSlot(QUrl, QWebEnginePage.Feature)
+    @Slot(QUrl, QWebEnginePage.Feature)
     def on_featurePermissionRequested(self, securityOrigin, feature):
         if feature != QWebEnginePage.Geolocation:
             return

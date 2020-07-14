@@ -1,7 +1,7 @@
-from PyQt5.QtChart import QBoxPlotSeries, QChart, QChartView
-from PyQt5.QtCore import QFile, QIODevice, Qt
-from PyQt5.QtGui import QPainter
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from Qt.QtChart import QBoxPlotSeries, QChart, QChartView
+from Qt.QtCore import QFile, QIODevice, Qt
+from Qt.QtGui import QPainter
+from Qt.QtWidgets import QApplication, QMainWindow
 
 import boxplotdata_rc  # noqa: F401
 from boxdatareader import BoxDataReader

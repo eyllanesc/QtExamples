@@ -1,7 +1,7 @@
-from PyQt5.QtCore import QPointF, Qt
-from PyQt5.QtGui import QColor, QGradient, QLinearGradient, QPainter, QPen
-from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5.QtChart import QAreaSeries, QChart, QChartView, QLineSeries
+from Qt.QtChart import QAreaSeries, QChart, QChartView, QLineSeries
+from Qt.QtCore import QPointF, Qt
+from Qt.QtGui import QColor, QGradient, QLinearGradient, QPainter, QPen
+from Qt.QtWidgets import QApplication, QMainWindow
 
 
 def main():

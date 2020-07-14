@@ -1,5 +1,5 @@
-from PyQt5.QtChart import QCandlestickSet
-from PyQt5.QtCore import QTextStream
+from Qt.QtChart import QCandlestickSet
+from Qt.QtCore import QTextStream
 
 
 class CandlestickDataReader(QTextStream):

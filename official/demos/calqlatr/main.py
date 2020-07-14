@@ -1,6 +1,6 @@
-from PyQt5.QtCore import QCoreApplication, Qt, QUrl
-from PyQt5.QtGui import QGuiApplication
-from PyQt5.QtQuick import QQuickView
+from Qt.QtCore import QCoreApplication, Qt, QUrl
+from Qt.QtGui import QGuiApplication
+from Qt.QtQuick import QQuickView
 
 import calqlatr_rc  # noqa: F401
 

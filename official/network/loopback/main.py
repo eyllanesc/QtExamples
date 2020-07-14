@@ -1,18 +1,9 @@
-from PyQt5.QtCore import pyqtSlot, QByteArray, Qt
-from PyQt5.QtGui import QGuiApplication
-from PyQt5.QtWidgets import (
-    QApplication,
-    QDialog,
-    QDialogButtonBox,
-    QLabel,
-    QMessageBox,
-    QProgressBar,
-    QPushButton,
-    QVBoxLayout,
-    QWidget,
-)
-from PyQt5.QtNetwork import QAbstractSocket, QHostAddress, QTcpServer, QTcpSocket
-
+from Qt.QtCore import QByteArray, Qt, Slot
+from Qt.QtGui import QGuiApplication
+from Qt.QtNetwork import QAbstractSocket, QHostAddress, QTcpServer, QTcpSocket
+from Qt.QtWidgets import (QApplication, QDialog, QDialogButtonBox, QLabel,
+                          QMessageBox, QProgressBar, QPushButton, QVBoxLayout,
+                          QWidget)
 
 TOTAL_BYTES = 50 * 1024 * 1024
 PAYLOAD_SIZE = 64 * 1024  # 64 KB
@@ -58,7 +49,7 @@ class Dialog(QDialog):
         mainLayout.addSpacing(10)
         mainLayout.addWidget(self.buttonBox)
 
-    @pyqtSlot()
+    @Slot()
     def start(self):
         self.startButton.setEnabled(False)
 
@@ -85,7 +76,7 @@ class Dialog(QDialog):
             QHostAddress.LocalHost, self.tcpServer.serverPort()
         )
 
-    @pyqtSlot()
+    @Slot()
     def acceptConnection(self):
         self.tcpServerConnection = self.tcpServer.nextPendingConnection()
         if not self.tcpServerConnection:
@@ -103,7 +94,7 @@ class Dialog(QDialog):
         self.serverStatusLabel.setText(self.tr("Accepted connection"))
         self.tcpServer.close()
 
-    @pyqtSlot()
+    @Slot()
     def startTransfer(self):
         # called when the TCP client connected to the loopback server
         self.bytesToWrite = TOTAL_BYTES - int(
@@ -111,7 +102,7 @@ class Dialog(QDialog):
         )
         self.clientStatusLabel.setText(self.tr("Connected"))
 
-    @pyqtSlot()
+    @Slot()
     def updateServerProgress(self):
         self.bytesReceived += int(self.tcpServerConnection.bytesAvailable())
         self.tcpServerConnection.readAll()
@@ -128,7 +119,7 @@ class Dialog(QDialog):
 
             QGuiApplication.restoreOverrideCursor()
 
-    @pyqtSlot("qint64")
+    @Slot("qint64")
     def updateClientProgress(self, numBytes):
         self.bytesWritten += int(numBytes)
 
@@ -143,7 +134,7 @@ class Dialog(QDialog):
             self.tr("Sent %dMB" % (self.bytesWritten / (1024 * 1024),))
         )
 
-    @pyqtSlot(QAbstractSocket.SocketError)
+    @Slot(QAbstractSocket.SocketError)
     def displayError(self, socketError):
         if socketError == QTcpSocket.RemoteHostClosedError:
             return

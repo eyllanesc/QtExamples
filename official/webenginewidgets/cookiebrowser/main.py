@@ -1,20 +1,11 @@
 from functools import partial
 
-from PyQt5.QtCore import pyqtSignal, pyqtSlot, QCoreApplication, QDateTime, Qt, QUrl
-from PyQt5.QtGui import QColor
-from PyQt5.QtWidgets import (
-    QApplication,
-    QDialog,
-    QMainWindow,
-    QSizePolicy,
-    QSpacerItem,
-    QVBoxLayout,
-    QWidget,
-)
-from PyQt5.QtNetwork import QNetworkCookie
-from PyQt5.QtWebEngineCore import QWebEngineCookieStore
-
-import sip
+from Qt.QtCore import QCoreApplication, QDateTime, Qt, QUrl, Signal, Slot
+from Qt.QtGui import QColor
+from Qt.QtNetwork import QNetworkCookie
+from Qt.QtWebEngineCore import QWebEngineCookieStore
+from Qt.QtWidgets import (QApplication, QDialog, QMainWindow, QSizePolicy,
+                          QSpacerItem, QVBoxLayout, QWidget)
 
 from cookiedialog_ui import Ui_CookieDialog
 from cookiewidget_ui import Ui_CookieWidget
@@ -38,8 +29,8 @@ class CookieWidget(QWidget, Ui_CookieWidget):
         )
         self.setPalette(p)
 
-    deleteClicked = pyqtSignal()
-    viewClicked = pyqtSignal()
+    deleteClicked = Signal()
+    viewClicked = Signal()
 
 
 class CookieDialog(QDialog, Ui_CookieDialog):
@@ -126,7 +117,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 return True
         return False
 
-    @pyqtSlot(QNetworkCookie)
+    @Slot(QNetworkCookie)
     def handleCookieAdded(self, cookie: QNetworkCookie):
         if self.containsCookie(cookie):
             return
@@ -136,6 +127,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         self.m_cookies.append(QNetworkCookie(cookie))
         self.m_layout.insertWidget(0, widget)
+
         widget.deleteClicked.connect(
             partial(self._on_deleteClicked, QNetworkCookie(cookie), widget)
         )
@@ -145,7 +137,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def _on_deleteClicked(self, cookie: QNetworkCookie, widget: QWidget):
         self.m_store.deleteCookie(QNetworkCookie(cookie))
-        sip.delete(widget)
+        # FIXME
+        # sip.delete(widget)
         self.m_cookies.remove(cookie)
         for i in range(self.m_layout.count() - 1, -1, -1):
             w = self.m_layout.itemAt(i).widget()
@@ -156,7 +149,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         dialog = CookieDialog(cookie)
         dialog.exec_()
 
-    @pyqtSlot()
+    @Slot()
     def handleDeleteAllClicked(self):
         self.m_store.deleteAllCookies()
         for i in range(self.m_layout.count() - 1, -1, -1):
@@ -165,13 +158,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 sip.delete(w)
         self.m_cookies.clear()
 
-    @pyqtSlot()
+    @Slot()
     def handleNewClicked(self):
         dialog = CookieDialog()
         if dialog.exec_() == QDialog.Accepted:
             self.m_store.setCookie(QNetworkCookie(dialog.cookie()))
 
-    @pyqtSlot()
+    @Slot()
     def handleUrlClicked(self):
         self.m_webview.load(QUrl.fromUserInput(self.m_urlLineEdit.text()))
 

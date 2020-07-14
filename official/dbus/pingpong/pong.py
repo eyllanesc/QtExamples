@@ -1,4 +1,4 @@
-from PyQt5.QtCore import pyqtSlot, QCoreApplication, QMetaObject, QObject
+from PyQt5.QtCore import QCoreApplication, QMetaObject, QObject, pyqtSlot
 from PyQt5.QtDBus import QDBusConnection
 
 from ping_common import SERVICE_NAME

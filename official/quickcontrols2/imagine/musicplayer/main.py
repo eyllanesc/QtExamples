@@ -1,6 +1,6 @@
-from PyQt5.QtCore import Qt, QUrl
-from PyQt5.QtGui import QGuiApplication, QIcon
-from PyQt5.QtQml import QQmlApplicationEngine
+from Qt.QtCore import Qt, QUrl
+from Qt.QtGui import QGuiApplication, QIcon
+from Qt.QtQml import QQmlApplicationEngine
 
 import icons_rc  # noqa: F401
 import imagine_assets_rc  # noqa: F401
