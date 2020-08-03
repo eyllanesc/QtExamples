@@ -5,9 +5,14 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 
  ## Examples
 
-- [Official Examples](official)
+- [Official Examples](official) [unfinished]
 - [GStreamer pipelines in Qt Multimedia Widgets](others/gst_pipeline)
 - [Embedding matplotlib in Qt](others/matplotlib)
+- [Add elements over videos](others/not_classified/1)
+
+## Request examples:
+
+If you have an idea for an example that you find interesting then you can post an [issue](issues/new?assignees=&labels=request+for+example&template=request-example.md&title=%5BExample%5D) and try to implement it.
 
 ## Donate
 
