@@ -12,7 +12,7 @@ Translations of the official Qt examples into [PyQt5](https://pypi.org/project/P
 
 ## Request examples:
 
-If you have an idea for an example that you find interesting then you can post an [issue]([https://github.com/eyllanesc/QtExamples/issues/new?assignees=&labels=request+for+example&template=request-example.md&title=%5BExample%5D) and I'll try to implement it.
+If you have an idea for an example that you find interesting then you can post an [issue](https://github.com/eyllanesc/QtExamples/issues/new?assignees=&labels=request+for+example&template=request-example.md&title=%5BExample%5D) and I'll try to implement it.
 
 ## Donate
 
