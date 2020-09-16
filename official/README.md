@@ -76,6 +76,14 @@ To convert the Qt.py examples to PyQt5 you must replace:
 | [cenumerator](serialport/cenumerator) | https://doc.qt.io/qt-5/qtserialport-cenumerator-example.html |
 | [enumerator](serialport/enumerator)   | https://doc.qt.io/qt-5/qtserialport-enumerator-example.html  |
 
+### Qt Sql
+
+| Name                                   | Link                                                      |
+| -------------------------------------- | --------------------------------------------------------- |
+| [achedtable](sql/cachedtable)          | https://doc.qt.io/qt-5/qtsql-cachedtable-example.html     |
+| [drilldown](sql/drilldown)             | https://doc.qt.io/qt-5/qtsql-drilldown-example.html       |
+| [sqlwidgetmapper](sql/sqlwidgetmapper) | https://doc.qt.io/qt-5/qtsql-sqlwidgetmapper-example.html |
+
 ## Qt Quick Controls 2
 
 | Name                                              | Link                                                                    |

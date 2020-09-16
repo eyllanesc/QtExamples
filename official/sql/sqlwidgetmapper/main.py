@@ -1,4 +1,4 @@
-from qtpy import QtWidgets, QtSql
+from Qt import QtWidgets, QtSql
 
 
 class Window(QtWidgets.QWidget):
@@ -66,37 +66,37 @@ class Window(QtWidgets.QWidget):
             return
 
         query = QtSql.QSqlQuery()
-        query.exec(
+        query.exec_(
             "create table person (id int primary key, "
             "name varchar(20), address varchar(200), typeid int)"
         )
-        query.exec(
+        query.exec_(
             "insert into person values(1, 'Alice', "
             "'<qt>123 Main Street<br/>Market Town</qt>', 101)"
         )
-        query.exec(
+        query.exec_(
             "insert into person values(2, 'Bob', "
             "'<qt>PO Box 32<br/>Mail Handling Service"
             "<br/>Service City</qt>', 102)"
         )
-        query.exec(
+        query.exec_(
             "insert into person values(3, 'Carol', "
             "'<qt>The Lighthouse<br/>Remote Island</qt>', 103)"
         )
-        query.exec(
+        query.exec_(
             "insert into person values(4, 'Donald', "
             "'<qt>47338 Park Avenue<br/>Big City</qt>', 101)"
         )
-        query.exec(
+        query.exec_(
             "insert into person values(5, 'Emma', "
             "'<qt>Research Station<br/>Base Camp<br/>"
             "Big Mountain</qt>', 103)"
         )
 
-        query.exec("create table addresstype (id int, description varchar(20))")
-        query.exec("insert into addresstype values(101, 'Home')")
-        query.exec("insert into addresstype values(102, 'Work')")
-        query.exec("insert into addresstype values(103, 'Other')")
+        query.exec_("create table addresstype (id int, description varchar(20))")
+        query.exec_("insert into addresstype values(101, 'Home')")
+        query.exec_("insert into addresstype values(102, 'Work')")
+        query.exec_("insert into addresstype values(103, 'Other')")
 
         self.model = QtSql.QSqlRelationalTableModel(self)
         self.model.setTable("person")
