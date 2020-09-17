@@ -80,7 +80,7 @@ To convert the Qt.py examples to PyQt5 you must replace:
 
 | Name                                   | Link                                                      |
 | -------------------------------------- | --------------------------------------------------------- |
-| [achedtable](sql/cachedtable)          | https://doc.qt.io/qt-5/qtsql-cachedtable-example.html     |
+| [cachedtable](sql/cachedtable)          | https://doc.qt.io/qt-5/qtsql-cachedtable-example.html     |
 | [drilldown](sql/drilldown)             | https://doc.qt.io/qt-5/qtsql-drilldown-example.html       |
 | [sqlwidgetmapper](sql/sqlwidgetmapper) | https://doc.qt.io/qt-5/qtsql-sqlwidgetmapper-example.html |
 
