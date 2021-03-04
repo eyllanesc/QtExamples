@@ -16,6 +16,7 @@ class SuggestionNetworkModel(QStandardItemModel):
         super().__init__(parent)
         self._current_reply: Optional[QNetworkReply] = None
         self._error_string: str = ""
+        self.network_manager.finished.connect(self.handle_finished)
 
     @cached_property
     def network_manager(self) -> QNetworkAccessManager:
@@ -30,10 +31,11 @@ class SuggestionNetworkModel(QStandardItemModel):
         self.clear()
         if self._current_reply is not None:
             self._current_reply.abort()
+        self._current_reply = None
         if text:
             r = self.create_request(text)
             self._current_reply = self.network_manager.get(r)
-            self._current_reply.finished.connect(self.handle_finished)
+
         loop = QEventLoop()
         self.finished.connect(loop.quit)
         loop.exec_()
@@ -42,10 +44,10 @@ class SuggestionNetworkModel(QStandardItemModel):
         request = QNetworkRequest()
         return request
 
-    @pyqtSlot()
-    def handle_finished(self) -> None:
-        reply: Optional[QNetworkReply] = self.sender()
-        if reply is None:
+    @pyqtSlot(QNetworkReply)
+    def handle_finished(self, reply: QNetworkReply) -> None:
+        reply.deleteLater()
+        if reply is not self._current_reply:
             return
         if reply.error() == QNetworkReply.OperationCanceledError:
             return
@@ -60,7 +62,6 @@ class SuggestionNetworkModel(QStandardItemModel):
             self._error_string = ""
         self._current_reply = None
         self.finished.emit()
-        reply.deleteLater()
 
     def process_reply(self, reply: QNetworkReply) -> Tuple[List[str], str]:
         return [], reply.errorString()
