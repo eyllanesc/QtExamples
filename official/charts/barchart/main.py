@@ -1,5 +1,11 @@
-from Qt.QtChart import (QBarCategoryAxis, QBarSeries, QBarSet, QChart,
-                        QChartView, QValueAxis)
+from Qt.QtChart import (
+    QBarCategoryAxis,
+    QBarSeries,
+    QBarSet,
+    QChart,
+    QChartView,
+    QValueAxis,
+)
 from Qt.QtCore import Qt
 from Qt.QtGui import QPainter
 from Qt.QtWidgets import QApplication, QMainWindow

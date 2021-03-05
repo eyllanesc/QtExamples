@@ -10,7 +10,6 @@ from candlestickdatareader import CandlestickDataReader
 def main():
     import sys
 
-
     a = QApplication(sys.argv)
 
     acmeSeries = QCandlestickSeries()
@@ -29,7 +28,9 @@ def main():
         _set = dataReader.readCandlestickSet()
         if _set is not None:
             acmeSeries.append(_set)
-            categories.append(QDateTime.fromMSecsSinceEpoch(int(_set.timestamp())).toString("dd"))
+            categories.append(
+                QDateTime.fromMSecsSinceEpoch(int(_set.timestamp())).toString("dd")
+            )
 
     chart = QChart()
     chart.addSeries(acmeSeries)

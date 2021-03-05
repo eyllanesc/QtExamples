@@ -53,7 +53,7 @@ def format_score(scr, test):
     """
     md = test_meta[test]
     if md:
-        return "{0}\n{1}".format(scr, md)
+        return "{}\n{}".format(scr, md)
     else:
         return scr
 

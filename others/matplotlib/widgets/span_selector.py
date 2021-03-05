@@ -15,17 +15,17 @@ canvas = FigureCanvas(fig)
 canvas.resize(640, 480)
 canvas.show()
 
-ax = fig.add_subplot(211, facecolor='#FFFFCC')
+ax = fig.add_subplot(211, facecolor="#FFFFCC")
 
 x = np.arange(0.0, 5.0, 0.01)
-y = np.sin(2*np.pi*x) + 0.5*np.random.randn(len(x))
+y = np.sin(2 * np.pi * x) + 0.5 * np.random.randn(len(x))
 
-ax.plot(x, y, '-')
+ax.plot(x, y, "-")
 ax.set_ylim(-2, 2)
-ax.set_title('Press left mouse button and drag to test')
+ax.set_title("Press left mouse button and drag to test")
 
-ax2 = fig.add_subplot(212, facecolor='#FFFFCC')
-line2, = ax2.plot(x, y, '-')
+ax2 = fig.add_subplot(212, facecolor="#FFFFCC")
+(line2,) = ax2.plot(x, y, "-")
 
 
 def onselect(xmin, xmax):
@@ -39,9 +39,11 @@ def onselect(xmin, xmax):
     ax2.set_ylim(thisy.min(), thisy.max())
     fig.canvas.draw()
 
+
 # set useblit True on gtkagg for enhanced performance
-span = SpanSelector(ax, onselect, 'horizontal', useblit=True,
-                    rectprops=dict(alpha=0.5, facecolor='red'))
+span = SpanSelector(
+    ax, onselect, "horizontal", useblit=True, rectprops=dict(alpha=0.5, facecolor="red")
+)
 
 
 sys.exit(app.exec_())

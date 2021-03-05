@@ -1,5 +1,4 @@
-from Qt.QtCore import (QCoreApplication, QEventLoop, QObject, QPointF, Qt,
-                       QUrl, Slot)
+from Qt.QtCore import QCoreApplication, QEventLoop, QObject, QPointF, Qt, QUrl, Slot
 from Qt.QtGui import QKeySequence, QPainter
 from Qt.QtPrintSupport import QPrintDialog, QPrinter, QPrintPreviewDialog
 from Qt.QtWebEngineWidgets import QWebEnginePage, QWebEngineView

@@ -94,7 +94,7 @@ class View(QGraphicsView):
             self.m_tooltip = Callout(self.m_chart)
 
         if state:
-            self.m_tooltip.setText("X: %f \nY: %f " % (point.x(), point.y()))
+            self.m_tooltip.setText("X: {:f} \nY: {:f} ".format(point.x(), point.y()))
             self.m_tooltip.setAnchor(point)
             self.m_tooltip.setZValue(11)
             self.m_tooltip.updateGeometry()

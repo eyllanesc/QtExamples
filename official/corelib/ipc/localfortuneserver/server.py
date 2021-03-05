@@ -3,8 +3,15 @@ import random
 from Qt.QtCore import QByteArray, QDataStream, QIODevice, Qt, QTimer, Slot
 from Qt.QtGui import QGuiApplication
 from Qt.QtNetwork import QLocalServer
-from Qt.QtWidgets import (QDialog, QHBoxLayout, QLabel, QMessageBox,
-                          QPushButton, QVBoxLayout, QWidget)
+from Qt.QtWidgets import (
+    QDialog,
+    QHBoxLayout,
+    QLabel,
+    QMessageBox,
+    QPushButton,
+    QVBoxLayout,
+    QWidget,
+)
 
 
 class Server(QDialog):

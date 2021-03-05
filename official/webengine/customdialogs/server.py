@@ -12,7 +12,7 @@ class Server(QObject):
     def run(self):
         if not self.m_server.listen(QHostAddress.LocalHost, 5555):
             print(
-                f"Could not start the server -> http/proxy authentication dialog will not work. Error:{self.m_server.errorString()}"
+                f"Could not start the server -> http/proxy authentication dialog will not work. Error:{self.m_server.errorString()}"  # noqa: E501
             )
 
     @Slot()

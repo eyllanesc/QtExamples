@@ -1,5 +1,11 @@
-from PyQt5.QtChart import (QBarCategoryAxis, QBarSeries, QChart, QChartView,
-                           QValueAxis, QVBarModelMapper)
+from PyQt5.QtChart import (
+    QBarCategoryAxis,
+    QBarSeries,
+    QChart,
+    QChartView,
+    QValueAxis,
+    QVBarModelMapper,
+)
 from PyQt5.QtCore import QRect, Qt
 from PyQt5.QtGui import QPainter
 from PyQt5.QtWidgets import QGridLayout, QHeaderView, QTableView, QWidget

@@ -1,8 +1,16 @@
 from Qt.QtCore import QCoreApplication, QPoint, Qt, QTimer, QUrl, Slot
 from Qt.QtGui import QDesktopServices, QPixmap
 from Qt.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
-from Qt.QtWidgets import (QApplication, QHBoxLayout, QLabel, QPushButton,
-                          QSizePolicy, QSpacerItem, QVBoxLayout, QWidget)
+from Qt.QtWidgets import (
+    QApplication,
+    QHBoxLayout,
+    QLabel,
+    QPushButton,
+    QSizePolicy,
+    QSpacerItem,
+    QVBoxLayout,
+    QWidget,
+)
 
 import data_rc  # noqa: F401
 import sip

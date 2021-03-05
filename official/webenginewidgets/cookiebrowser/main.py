@@ -4,8 +4,15 @@ from Qt.QtCore import QCoreApplication, QDateTime, Qt, QUrl, Signal, Slot
 from Qt.QtGui import QColor
 from Qt.QtNetwork import QNetworkCookie
 from Qt.QtWebEngineCore import QWebEngineCookieStore
-from Qt.QtWidgets import (QApplication, QDialog, QMainWindow, QSizePolicy,
-                          QSpacerItem, QVBoxLayout, QWidget)
+from Qt.QtWidgets import (
+    QApplication,
+    QDialog,
+    QMainWindow,
+    QSizePolicy,
+    QSpacerItem,
+    QVBoxLayout,
+    QWidget,
+)
 
 from cookiedialog_ui import Ui_CookieDialog
 from cookiewidget_ui import Ui_CookieWidget
@@ -106,7 +113,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.m_deleteAllButton.clicked.connect(self.handleDeleteAllClicked)
         self.m_newButton.clicked.connect(self.handleNewClicked)
 
-        self.m_store: QWebEngineCookieStore = self.m_webview.page().profile().cookieStore()
+        self.m_store: QWebEngineCookieStore = (
+            self.m_webview.page().profile().cookieStore()
+        )
         self.m_store.cookieAdded.connect(self.handleCookieAdded)
         self.m_store.loadAllCookies()
         self.m_webview.load(url)
@@ -155,7 +164,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         for i in range(self.m_layout.count() - 1, -1, -1):
             w = self.m_layout.itemAt(i).widget()
             if w:
-                sip.delete(w)
+                sip.delete(w)  # noqa: F821
         self.m_cookies.clear()
 
     @Slot()

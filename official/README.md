@@ -137,4 +137,3 @@ To convert the Qt.py examples to PyQt5 you must replace:
 | [coffee](demos/coffee)             | https://doc.qt.io/qt-5/qtdoc-demos-coffee-example.html       |
 | [maroon](demos/maroon)             | https://doc.qt.io/qt-5/qtdoc-demos-maroon-example.html       |
 | [photosurface](demos/photosurface) | https://doc.qt.io/qt-5/qtdoc-demos-photosurface-example.html |
-

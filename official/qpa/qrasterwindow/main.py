@@ -7,7 +7,6 @@ from qtpy.QtGui import (
     QPainter,
     QPainterPath,
     QRasterWindow,
-    QTransform,
     QVector3D,
 )
 

@@ -143,4 +143,3 @@ T.CheckBox {
         verticalAlignment: Text.AlignVCenter
     }
 }
-

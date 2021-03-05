@@ -8,5 +8,3 @@ Font license info
    Author:    Aristeides Stathopoulos
    License:   SIL (http://scripts.sil.org/OFL)
    Homepage:  http://aristeides.com/
-
-

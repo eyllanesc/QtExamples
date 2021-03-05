@@ -4,13 +4,13 @@ QWidget#StyleWidget
 	background-image: url(icons:nature_1.jpg);
 }
 
-QLabel, QAbstractButton 
+QLabel, QAbstractButton
 {
 	font: bold;
 	color: beige;
 }
 
-QAbstractButton 
+QAbstractButton
 {
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(173,216,230,60%), stop:1 rgba(0,0,139,60%) );
 	border-color: black;
@@ -33,17 +33,17 @@ QSpinBox {
 	border-width: 3;
 }
 
-QSpinBox::up-button 
+QSpinBox::up-button
 {
 	subcontrol-origin: padding;
 	subcontrol-position: right; /* position at the top right corner */
 	width: 24px;
 	height: 24px;
 	border-width: 3px;
-	
+
 }
 
-QSpinBox::up-arrow 
+QSpinBox::up-arrow
 {
 	image: url(icons:add.png);
 	width: 18px;
@@ -51,7 +51,7 @@ QSpinBox::up-arrow
 }
 
 
-QSpinBox::down-button 
+QSpinBox::down-button
 {
 	subcontrol-origin: border;
 	subcontrol-position: left;
@@ -60,7 +60,7 @@ QSpinBox::down-button
 	border-width: 3px;
 }
 
-QSpinBox::down-arrow 
+QSpinBox::down-arrow
 {
 	image: url(icons:remove.png);
 	width: 18px;
@@ -68,7 +68,7 @@ QSpinBox::down-arrow
 }
 
 
-QScrollBar:horizontal 
+QScrollBar:horizontal
 {
 	border: 1px solid black;
 	background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,139,60%), stop:1 rgba(173,216,230,60%) );
@@ -76,14 +76,14 @@ QScrollBar:horizontal
 	margin: 0px 20px 0 20px;
 }
 
-QScrollBar::handle:horizontal 
+QScrollBar::handle:horizontal
 {
 	border: 1px solid black;
 	background: rgba(0,0,139,60%);
 	min-width: 20px;
 }
 
-QScrollBar::add-line:horizontal 
+QScrollBar::add-line:horizontal
 {
 	border: 1px solid black;
 	background: rgba(0,0,139,60%);
@@ -92,7 +92,7 @@ QScrollBar::add-line:horizontal
 	subcontrol-origin: margin;
 }
 
-QScrollBar::sub-line:horizontal 
+QScrollBar::sub-line:horizontal
 {
 	border: 1px solid black;
 	background: rgba(0,0,139,60%);
@@ -101,25 +101,24 @@ QScrollBar::sub-line:horizontal
 	subcontrol-origin: margin;
 }
 
-QScrollBar:left-arrow:horizontal, QScrollBar::right-arrow:horizontal 
+QScrollBar:left-arrow:horizontal, QScrollBar::right-arrow:horizontal
 {
 	border: none;
 	width: 16px;
 	height: 16px;
 }
 
-QScrollBar:left-arrow:horizontal 
+QScrollBar:left-arrow:horizontal
 {
 	image: url(icons:add.png)
 }
 
-QScrollBar::right-arrow:horizontal 
+QScrollBar::right-arrow:horizontal
 {
 	image: url(icons:remove.png)
 }
 
-QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal 
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
 {
 	background: none;
 }
-

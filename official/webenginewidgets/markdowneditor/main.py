@@ -1,10 +1,20 @@
-from Qt.QtCore import (Property, QCoreApplication, QDir, QFile, QIODevice,
-                       QObject, Qt, QTextStream, QUrl, Signal, Slot)
+from Qt.QtCore import (
+    Property,
+    QCoreApplication,
+    QDir,
+    QFile,
+    QIODevice,
+    QObject,
+    Qt,
+    QTextStream,
+    QUrl,
+    Signal,
+    Slot,
+)
 from Qt.QtGui import QDesktopServices, QFontDatabase
 from Qt.QtWebChannel import QWebChannel
 from Qt.QtWebEngineWidgets import QWebEnginePage
-from Qt.QtWidgets import (QApplication, QFileDialog, QMainWindow, QMessageBox,
-                          QWidget)
+from Qt.QtWidgets import QApplication, QFileDialog, QMainWindow, QMessageBox, QWidget
 
 import markdowneditor_rc  # noqa: F401
 from mainwindow_ui import Ui_MainWindow

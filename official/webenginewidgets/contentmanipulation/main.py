@@ -1,7 +1,14 @@
 from Qt.QtCore import QCoreApplication, QFile, QIODevice, Qt, QUrl, Slot
 from Qt.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
-from Qt.QtWidgets import (QAction, QApplication, QLineEdit, QMainWindow,
-                          QSizePolicy, QStyle, QTextEdit)
+from Qt.QtWidgets import (
+    QAction,
+    QApplication,
+    QLineEdit,
+    QMainWindow,
+    QSizePolicy,
+    QStyle,
+    QTextEdit,
+)
 
 import jquery_rc  # noqa: F401
 
@@ -119,9 +126,9 @@ class MainWindow(QMainWindow):
     def rotateImages(self, invert):
         code = ""
         if invert:
-            code = "qt.jQuery('img').each( function () { qt.jQuery(this).css('transition', 'transform 2s'); qt.jQuery(this).css('transform', 'rotate(180deg)') } )"
+            code = "qt.jQuery('img').each( function () { qt.jQuery(this).css('transition', 'transform 2s'); qt.jQuery(this).css('transform', 'rotate(180deg)') } )"  # noqa: E501
         else:
-            code = "qt.jQuery('img').each( function () { qt.jQuery(this).css('transition', 'transform 2s'); qt.jQuery(this).css('transform', 'rotate(0deg)') } )"
+            code = "qt.jQuery('img').each( function () { qt.jQuery(this).css('transition', 'transform 2s'); qt.jQuery(this).css('transform', 'rotate(0deg)') } )"  # noqa: E501
         self.view.page().runJavaScript(code)
 
     @Slot()

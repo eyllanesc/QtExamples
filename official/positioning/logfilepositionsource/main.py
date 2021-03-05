@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QApplication
 
 from clientapplication import ClientApplication
 
-import logfile_rc
+import logfile_rc  # noqa: F401
 
 
 def main():

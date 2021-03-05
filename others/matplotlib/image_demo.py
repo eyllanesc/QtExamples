@@ -10,8 +10,13 @@ from matplotlib.backends.backend_qt5agg import FigureCanvas
 from matplotlib.figure import Figure
 from matplotlib.patches import PathPatch
 from matplotlib.path import Path
-from PyQt5.QtWidgets import (QApplication, QHBoxLayout, QListWidget,
-                             QStackedWidget, QWidget)
+from PyQt5.QtWidgets import (
+    QApplication,
+    QHBoxLayout,
+    QListWidget,
+    QStackedWidget,
+    QWidget,
+)
 
 
 class Widget(QWidget):
@@ -53,7 +58,7 @@ class Widget(QWidget):
         Z = (Z1 - Z2) * 2
 
         ax = canvas.figure.subplots()
-        im = ax.imshow(
+        im = ax.imshow(  # noqa: F841
             Z,
             interpolation="bilinear",
             cmap=cm.RdYlGn,
@@ -88,7 +93,7 @@ class Widget(QWidget):
 
         ax = canvas2.figure.subplots()
         extent = (0, 25, 0, 25)
-        im = ax.imshow(A, cmap=cm.hot, origin="upper", extent=extent)
+        im = ax.imshow(A, cmap=cm.hot, origin="upper", extent=extent)  # noqa: F841
 
         markers = [(15.9, 14.5), (16.8, 15)]
         x, y = zip(*markers)

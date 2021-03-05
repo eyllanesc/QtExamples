@@ -1,8 +1,16 @@
 from Qt.QtCore import QDataStream, Qt, QTimer, Slot
 from Qt.QtGui import QGuiApplication
 from Qt.QtNetwork import QLocalSocket
-from Qt.QtWidgets import (QDialog, QDialogButtonBox, QGridLayout, QLabel,
-                          QLineEdit, QMessageBox, QPushButton, QWidget)
+from Qt.QtWidgets import (
+    QDialog,
+    QDialogButtonBox,
+    QGridLayout,
+    QLabel,
+    QLineEdit,
+    QMessageBox,
+    QPushButton,
+    QWidget,
+)
 
 
 class Client(QDialog):
@@ -67,7 +75,7 @@ class Client(QDialog):
         if self.blockSize == 0:
             # Relies on the fact that QDataStream serializes a quint32 into
             # sizeof(quint32) bytes
-            if self.socket.bytesAvailable() < 4:  #  (int)sizeof(quint32))
+            if self.socket.bytesAvailable() < 4:  # (int)sizeof(quint32))
                 return
             self.blockSize = self._in.readUInt32()
 

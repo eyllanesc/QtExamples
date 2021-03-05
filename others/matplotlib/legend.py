@@ -15,19 +15,19 @@ canvas.resize(640, 480)
 canvas.show()
 
 # Make some fake data.
-a = b = np.arange(0, 3, .02)
+a = b = np.arange(0, 3, 0.02)
 c = np.exp(a)
 d = c[::-1]
 
 # Create plots with pre-defined labels.
 ax = fig.subplots()
-ax.plot(a, c, 'k--', label='Model length')
-ax.plot(a, d, 'k:', label='Data length')
-ax.plot(a, c + d, 'k', label='Total message length')
+ax.plot(a, c, "k--", label="Model length")
+ax.plot(a, d, "k:", label="Data length")
+ax.plot(a, c + d, "k", label="Total message length")
 
-legend = ax.legend(loc='upper center', shadow=True, fontsize='x-large')
+legend = ax.legend(loc="upper center", shadow=True, fontsize="x-large")
 
 # Put a nicer background color on the legend.
-legend.get_frame().set_facecolor('C0')
+legend.get_frame().set_facecolor("C0")
 
 sys.exit(app.exec_())

@@ -1,6 +1,15 @@
 from Qt.QtCore import QEvent, QRect, QRectF, Qt
-from Qt.QtGui import (QBackingStore, QExposeEvent, QGradient, QGuiApplication,
-                      QPaintDevice, QPainter, QRegion, QResizeEvent, QWindow)
+from Qt.QtGui import (
+    QBackingStore,
+    QExposeEvent,
+    QGradient,
+    QGuiApplication,
+    QPaintDevice,
+    QPainter,
+    QRegion,
+    QResizeEvent,
+    QWindow,
+)
 
 
 class RasterWindow(QWindow):

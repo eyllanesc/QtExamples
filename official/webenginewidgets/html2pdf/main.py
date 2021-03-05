@@ -23,7 +23,7 @@ class Html2PdfConverter(QObject):
     @Slot(bool)
     def loadFinished(self, ok: bool):
         if not ok:
-            sys.stderr.write("failed to load URL '%s'" % (self.m_inputPath,))
+            sys.stderr.write("failed to load URL '{}'".format(self.m_inputPath))
             QCoreApplication.exit(1)
             return
         self.m_page.printToPdf(self.m_outputPath)
@@ -31,14 +31,14 @@ class Html2PdfConverter(QObject):
     @Slot(str, bool)
     def pdfPrintingFinished(self, filePath: str, success: bool):
         if not success:
-            sys.stderr.write("failed to print to output file '%s'" % (filePath,))
+            sys.stderr.write("failed to print to output file '{}'".format(filePath))
             QCoreApplication.exit(1)
         else:
             QCoreApplication.quit()
 
 
 def main():
-    app = QApplication(sys.argv)
+    app = QApplication(sys.argv)  # noqa: F841
 
     QCoreApplication.setOrganizationName("QtExamples")
     QCoreApplication.setApplicationName("html2pdf")

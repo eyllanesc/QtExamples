@@ -1,12 +1,11 @@
-from Qt.QtCore import (QByteArray, QCoreApplication, QFile, QIODevice,
-                       QTextStream)
+from Qt.QtCore import QByteArray, QCoreApplication, QFile, QIODevice, QTextStream
 from Qt.QtSerialPort import QSerialPortInfo
 
 
 def main():
     import sys
 
-    app = QCoreApplication(sys.argv)
+    app = QCoreApplication(sys.argv)  # noqa: F841
     f = QFile()
     f.open(sys.stdout.fileno(), QIODevice.WriteOnly)
     out = QTextStream(f)
@@ -23,7 +22,7 @@ def main():
         description = serialPortInfo.description()
         manufacturer = serialPortInfo.manufacturer()
         serialNumber = serialPortInfo.serialNumber()
-        out << "\nPort: " << serialPortInfo.portName() << "\nLocation: " << serialPortInfo.systemLocation() << "\nDescription: " << (
+        out << "\nPort: " << serialPortInfo.portName() << "\nLocation: " << serialPortInfo.systemLocation() << "\nDescription: " << (  # noqa: E501
             description if description else blankString
         ) << "\nManufacturer: " << (
             manufacturer if manufacturer else blankString

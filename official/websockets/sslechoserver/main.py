@@ -10,7 +10,7 @@ def main():
 
     app = QCoreApplication(sys.argv)
 
-    server = SslEchoServer(1234)
+    server = SslEchoServer(1234)  # noqa: F841
 
     sys.exit(app.exec_())
 

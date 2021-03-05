@@ -7,7 +7,7 @@ from ping_common import SERVICE_NAME
 def main():
     import sys
 
-    app = QCoreApplication(sys.argv)
+    app = QCoreApplication(sys.argv)  # noqa: F841
 
     if not QDBusConnection.sessionBus().isConnected():
         sys.stderr.write(

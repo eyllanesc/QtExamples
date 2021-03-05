@@ -17,12 +17,17 @@ canvas.show()
 
 NUM = 250
 
-ells = [Ellipse(xy=np.random.rand(2) * 10,
-                width=np.random.rand(), height=np.random.rand(),
-                angle=np.random.rand() * 360)
-        for i in range(NUM)]
+ells = [
+    Ellipse(
+        xy=np.random.rand(2) * 10,
+        width=np.random.rand(),
+        height=np.random.rand(),
+        angle=np.random.rand() * 360,
+    )
+    for i in range(NUM)
+]
 
-ax = fig.subplots(subplot_kw={'aspect': 'equal'})
+ax = fig.subplots(subplot_kw={"aspect": "equal"})
 for e in ells:
     ax.add_artist(e)
     e.set_clip_box(ax.bbox)

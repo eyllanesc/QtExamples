@@ -65,7 +65,7 @@ QQC1.ApplicationWindow{
                     checked: styleData.value
                     anchors.centerIn: parent
                     onCheckedStateChanged: function(){
-                        if(manager.model) 
+                        if(manager.model)
                             manager.model.setChecked(styleData.row, checked)
                     }
                 }

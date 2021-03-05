@@ -1,6 +1,15 @@
 from Qt.QtCore import QBasicTimer, QPoint, QRect, QSize, Qt, QTimerEvent, Slot
-from Qt.QtGui import (QColor, QKeyEvent, QMouseEvent, QPainter, QPainterPath,
-                      QPaintEvent, QPixmap, QRadialGradient, QResizeEvent)
+from Qt.QtGui import (
+    QColor,
+    QKeyEvent,
+    QMouseEvent,
+    QPainter,
+    QPainterPath,
+    QPaintEvent,
+    QPixmap,
+    QRadialGradient,
+    QResizeEvent,
+)
 from Qt.QtWidgets import QWidget
 
 from slippymap import SlippyMap

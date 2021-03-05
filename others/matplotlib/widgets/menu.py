@@ -133,8 +133,6 @@ class Menu(object):
         maxw = max([item.labelwidth for item in menuitems])
         maxh = max([item.labelheight for item in menuitems])
 
-        totalh = self.numitems * maxh + (self.numitems + 1) * 2 * MenuItem.pady
-
         x0 = 100
         y0 = 400
 
@@ -169,17 +167,16 @@ canvas.resize(640, 480)
 canvas.show()
 
 fig.subplots_adjust(left=0.3)
-props = ItemProperties(labelcolor='black', bgcolor='yellow',
-                       fontsize=15, alpha=0.2)
-hoverprops = ItemProperties(labelcolor='white', bgcolor='blue',
-                            fontsize=15, alpha=0.2)
+props = ItemProperties(labelcolor="black", bgcolor="yellow", fontsize=15, alpha=0.2)
+hoverprops = ItemProperties(labelcolor="white", bgcolor="blue", fontsize=15, alpha=0.2)
 
 menuitems = []
-for label in ('open', 'close', 'save', 'save as', 'quit'):
+for label in ("open", "close", "save", "save as", "quit"):
+
     def on_select(item):
-        print('you selected %s' % item.labelstr)
-    item = MenuItem(fig, label, props=props, hoverprops=hoverprops,
-                    on_select=on_select)
+        print("you selected %s" % item.labelstr)
+
+    item = MenuItem(fig, label, props=props, hoverprops=hoverprops, on_select=on_select)
     menuitems.append(item)
 
 menu = Menu(fig, menuitems)

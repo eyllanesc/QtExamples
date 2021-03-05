@@ -158,4 +158,3 @@ function operatorPressed(op)
         digits = ""
     }
 }
-

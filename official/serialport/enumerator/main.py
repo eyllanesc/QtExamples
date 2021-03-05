@@ -1,6 +1,5 @@
 from Qt.QtSerialPort import QSerialPortInfo
-from Qt.QtWidgets import (QApplication, QLabel, QScrollArea, QVBoxLayout,
-                          QWidget)
+from Qt.QtWidgets import QApplication, QLabel, QScrollArea, QVBoxLayout, QWidget
 
 
 def main():

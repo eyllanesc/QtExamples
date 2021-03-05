@@ -2,7 +2,7 @@ from Qt.QtWidgets import QApplication
 
 from connection import createConnection
 from view import View
-import drilldown_rc
+import drilldown_rc  # noqa: F401
 
 
 def main():

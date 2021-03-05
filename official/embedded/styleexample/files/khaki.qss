@@ -65,7 +65,7 @@ QSpinBox {
      border-width: 3;
 }
 
-QSpinBox::up-button 
+QSpinBox::up-button
 {
      subcontrol-origin: padding;
      subcontrol-position: right; /* position at the top right corner */
@@ -82,7 +82,7 @@ QSpinBox::up-arrow {
  }
 
 
-QSpinBox::down-button 
+QSpinBox::down-button
 {
      subcontrol-origin: border;
      subcontrol-position: left;

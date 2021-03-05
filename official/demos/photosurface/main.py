@@ -1,6 +1,12 @@
 from Qt import __qt_version__
-from Qt.QtCore import (QCommandLineParser, QCoreApplication, QDir,
-                       QMimeDatabase, QStandardPaths, QUrl)
+from Qt.QtCore import (
+    QCommandLineParser,
+    QCoreApplication,
+    QDir,
+    QMimeDatabase,
+    QStandardPaths,
+    QUrl,
+)
 from Qt.QtGui import QImageReader
 from Qt.QtQml import QQmlApplicationEngine, QQmlContext
 from Qt.QtQuick import QQuickWindow

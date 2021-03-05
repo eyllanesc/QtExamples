@@ -16,7 +16,7 @@ class MainWindow(QtWidgets.QMainWindow):
         for text in (
             ('gst-pipeline: videotestsrc ! xvimagesink name="qtvideosink"'),
             (
-                'gst-pipeline: v4l2src device="/dev/video0" ! video/x-raw,width=640,height=480 ! xvimagesink name="qtvideosink"'
+                'gst-pipeline: v4l2src device="/dev/video0" ! video/x-raw,width=640,height=480 ! xvimagesink name="qtvideosink"'  # noqa: E501
             ),
             ('gst-pipeline: ximagesrc ! videoconvert ! xvimagesink name="qtvideosink"'),
         ):

@@ -11,8 +11,7 @@ import geoplot.crs as gcrs
 import numpy as np
 import pandas as pd
 from matplotlib.backends.backend_qt5agg import FigureCanvas
-from matplotlib.backends.backend_qt5agg import \
-    NavigationToolbar2QT as NavigationToolbar
+from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
 from matplotlib.figure import Figure
 from mpl_toolkits.basemap import Basemap
 
@@ -105,7 +104,7 @@ def basemap(canvas):
     # compute native map projection coordinates of lat/lon grid.
     x, y = map(lons * 180.0 / np.pi, lats * 180.0 / np.pi)
     # contour data over the map.
-    cs = map.contour(x, y, wave + mean, 15, linewidths=1.5)
+    cs = map.contour(x, y, wave + mean, 15, linewidths=1.5)  # noqa: F841
     ax.set_title("contour lines over filled continent background")
 
 

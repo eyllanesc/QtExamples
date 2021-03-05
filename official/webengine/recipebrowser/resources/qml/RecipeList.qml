@@ -169,4 +169,3 @@ FocusScope {
         help.open()
     }
 }
-

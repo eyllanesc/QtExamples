@@ -3,7 +3,7 @@
 	color: beige;
 }
 
-QLabel, QAbstractButton 
+QLabel, QAbstractButton
 {
     font: bold;
 	color: yellow;

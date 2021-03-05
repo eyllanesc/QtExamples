@@ -20,19 +20,19 @@ You must install Qt of the same version that was used to compile the library, an
 
 #### PyQt5
 
-```python
+```console
 python -c "from PyQt5.QtCore import QT_VERSION_STR; print('Qt version', QT_VERSION_STR)"
 ```
 
 #### PySide2
 
-```python
+```console
 python -c "from PySide2.QtCore import qVersion; print('Qt version', qVersion())"
 ```
 
 To install Qt you can use [aqtinstall](https://github.com/miurahr/aqtinstall).
 
-Then you will have to compile the project and copy the binaries in places similar to the one saved in Qt. 
+Then you will have to compile the project and copy the binaries in places similar to the one saved in Qt.
 
 In the case of plugins, it is installed in the QT_INSTALL_PLUGINS folder that can be obtained with qmake to install Qt:
 

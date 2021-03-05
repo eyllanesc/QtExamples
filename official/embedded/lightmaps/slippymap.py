@@ -1,11 +1,24 @@
 import math
 import typing
 
-from Qt.QtCore import (QObject, QPoint, QPointF, QRect, QStandardPaths, Qt,
-                       QUrl, Signal, Slot)
+from Qt.QtCore import (
+    QObject,
+    QPoint,
+    QPointF,
+    QRect,
+    QStandardPaths,
+    Qt,
+    QUrl,
+    Signal,
+    Slot,
+)
 from Qt.QtGui import QImage, QPainter, QPixmap
-from Qt.QtNetwork import (QNetworkAccessManager, QNetworkDiskCache,
-                          QNetworkReply, QNetworkRequest)
+from Qt.QtNetwork import (
+    QNetworkAccessManager,
+    QNetworkDiskCache,
+    QNetworkReply,
+    QNetworkRequest,
+)
 
 
 def qHash(p: QPoint) -> int:

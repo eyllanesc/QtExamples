@@ -64,7 +64,7 @@ the_table = ax.table(
 # Adjust layout to make room for the table:
 fig.subplots_adjust(left=0.2, bottom=0.2)
 
-ax.set_ylabel("Loss in ${0}'s".format(value_increment))
+ax.set_ylabel("Loss in ${}'s".format(value_increment))
 ax.set_yticks(values * value_increment, ["%d" % val for val in values])
 ax.set_xticks([])
 ax.set_title("Loss by Disaster")

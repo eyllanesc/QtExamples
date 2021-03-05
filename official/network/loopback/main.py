@@ -1,9 +1,17 @@
 from Qt.QtCore import QByteArray, Qt, Slot
 from Qt.QtGui import QGuiApplication
 from Qt.QtNetwork import QAbstractSocket, QHostAddress, QTcpServer, QTcpSocket
-from Qt.QtWidgets import (QApplication, QDialog, QDialogButtonBox, QLabel,
-                          QMessageBox, QProgressBar, QPushButton, QVBoxLayout,
-                          QWidget)
+from Qt.QtWidgets import (
+    QApplication,
+    QDialog,
+    QDialogButtonBox,
+    QLabel,
+    QMessageBox,
+    QProgressBar,
+    QPushButton,
+    QVBoxLayout,
+    QWidget,
+)
 
 TOTAL_BYTES = 50 * 1024 * 1024
 PAYLOAD_SIZE = 64 * 1024  # 64 KB
@@ -143,7 +151,7 @@ class Dialog(QDialog):
             self,
             self.tr("Network error"),
             self.tr(
-                "The following error occurred: %s." % (self.tcpClient.errorString(),)
+                "The following error occurred: {}.".format(self.tcpClient.errorString())
             ),
         )
         self.tcpClient.close()

@@ -21,7 +21,7 @@ class MainWindow(QMainWindow):
         mgsbox = QMessageBox(self)
         mgsbox.setAttribute(Qt.WA_DeleteOnClose)
         mgsbox.setText(
-            self.tr("%s wants to know your location" % (securityOrigin.host(),))
+            self.tr("{} wants to know your location".format(securityOrigin.host()))
         )
         mgsbox.setInformativeText(
             self.tr("Do you want to send your current location to this website?")

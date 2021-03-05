@@ -1,8 +1,10 @@
 from Qt.QtCore import QByteArray, QCoreApplication, QFile, QIODevice, Qt, QUrl
-from Qt.QtWebEngineCore import (QWebEngineUrlRequestJob, QWebEngineUrlScheme,
-                                QWebEngineUrlSchemeHandler)
-from Qt.QtWebEngineWidgets import (QWebEnginePage, QWebEngineProfile,
-                                   QWebEngineView)
+from Qt.QtWebEngineCore import (
+    QWebEngineUrlRequestJob,
+    QWebEngineUrlScheme,
+    QWebEngineUrlSchemeHandler,
+)
+from Qt.QtWebEngineWidgets import QWebEnginePage, QWebEngineProfile, QWebEngineView
 from Qt.QtWidgets import QApplication
 
 import webui_rc  # noqa: F401

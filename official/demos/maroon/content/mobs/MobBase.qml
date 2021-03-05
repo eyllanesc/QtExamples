@@ -269,4 +269,3 @@ Item  {
         NumberAnimation { from: x - 5; to: x; duration: 900; easing.type: Easing.InOutQuad }
     }
 }
-

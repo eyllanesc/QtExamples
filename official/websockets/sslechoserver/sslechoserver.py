@@ -1,7 +1,13 @@
 from Qt import __binding__
 from Qt.QtCore import QFile, QIODevice, QObject
-from Qt.QtNetwork import (QHostAddress, QSsl, QSslCertificate,
-                          QSslConfiguration, QSslKey, QSslSocket)
+from Qt.QtNetwork import (
+    QHostAddress,
+    QSsl,
+    QSslCertificate,
+    QSslConfiguration,
+    QSslKey,
+    QSslSocket,
+)
 from Qt.QtWebSockets import QWebSocketServer
 
 

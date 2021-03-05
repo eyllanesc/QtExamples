@@ -120,7 +120,7 @@ class GSuggestCompletion(QtCore.QObject):
 
     @QtCore.Slot("QNetworkReply*")
     def handleNetworkData(self, networkReply):
-        url = networkReply.url()
+        # url = networkReply.url()
         if networkReply.error() == QtNetwork.QNetworkReply.NoError:
             choices = []
             response = networkReply.readAll()
