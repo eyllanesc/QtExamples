@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QBasicTimer, QPoint, QRect, QSize, Qt, QTimerEvent, Slot
 from Qt.QtGui import (
     QColor,

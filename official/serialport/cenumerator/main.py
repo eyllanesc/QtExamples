@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QByteArray, QCoreApplication, QFile, QIODevice, QTextStream
 from Qt.QtSerialPort import QSerialPortInfo
 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import Qt, QUrl
 from Qt.QtGui import QGuiApplication, QIcon
 from Qt.QtQml import QQmlApplicationEngine

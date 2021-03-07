@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtChart import QChart, QChartView, QLineSeries, QValueAxis, QXYSeries
 from Qt.QtCore import QIODevice, QObject, QPointF, Qt
 from Qt.QtMultimedia import QAudioDeviceInfo, QAudioFormat, QAudioInput

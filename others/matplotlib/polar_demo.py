@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # https://matplotlib.org/3.2.1/gallery/pie_and_polar_charts/polar_demo.html
 
 import sys

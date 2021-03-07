@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # https://matplotlib.org/examples/widgets/buttons.html
 
 import sys

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QCoreApplication, QPoint, Qt, QTimer, QUrl, Slot
 from Qt.QtGui import QDesktopServices, QPixmap
 from Qt.QtWebEngineWidgets import QWebEnginePage, QWebEngineView

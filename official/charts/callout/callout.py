@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QPoint, QPointF, QRect, QRectF, Qt
 from Qt.QtGui import QColor, QFont, QFontMetrics, QPainterPath
 from Qt.QtWidgets import QGraphicsItem

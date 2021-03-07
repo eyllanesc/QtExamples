@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import Qt
 from Qt.QtWidgets import (
     QDialogButtonBox,

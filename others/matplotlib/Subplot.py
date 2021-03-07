@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # https://matplotlib.org/3.2.1/tutorials/introductory/sample_plots.html#subplot-example
 
 import sys

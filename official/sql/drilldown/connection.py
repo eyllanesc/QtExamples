@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QObject
 from Qt.QtWidgets import QMessageBox
 from Qt.QtSql import QSqlDatabase, QSqlQuery

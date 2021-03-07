@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QUrl, Slot
 from Qt.QtGui import QDesktopServices
 from Qt.QtWidgets import QAction, QMainWindow, QWidget

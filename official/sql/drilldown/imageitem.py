@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QTimeLine
 from Qt.QtGui import QTransform
 from Qt.QtWidgets import QGraphicsPixmapItem

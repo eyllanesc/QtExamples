@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from qtpy.QtCore import QPoint, QRect, QSize, Qt
 from qtpy.QtGui import (
     QBackingStore,

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt import __qt_version__
 from Qt.QtCore import (
     QCommandLineParser,

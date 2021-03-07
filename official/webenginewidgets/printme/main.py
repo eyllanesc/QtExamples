@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QCoreApplication, QEventLoop, QObject, QPointF, Qt, QUrl, Slot
 from Qt.QtGui import QKeySequence, QPainter
 from Qt.QtPrintSupport import QPrintDialog, QPrinter, QPrintPreviewDialog

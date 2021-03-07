@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QDataStream, Qt, QTimer, Slot
 from Qt.QtGui import QGuiApplication
 from Qt.QtNetwork import QLocalSocket

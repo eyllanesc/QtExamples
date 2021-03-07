@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtWidgets import QApplication
 
 from mapzoom import MapZoom

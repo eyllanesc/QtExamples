@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # https://matplotlib.org/examples/widgets/lasso_selector_demo.html
 
 import sys

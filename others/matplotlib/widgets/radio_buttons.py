@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # https://matplotlib.org/examples/widgets/radio_buttons.html
 
 import sys

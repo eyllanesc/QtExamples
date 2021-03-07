@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 charts_class = [
     "QAreaSeries",
     "QBarCategoryAxis",

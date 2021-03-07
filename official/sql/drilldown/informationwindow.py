@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import Qt, Signal, Slot
 from Qt.QtWidgets import (
     QComboBox,

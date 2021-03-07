@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 
 from Qt import __qt_version__

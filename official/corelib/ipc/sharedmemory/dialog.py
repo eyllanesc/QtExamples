@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QBuffer, QDataStream, QSharedMemory, Slot
 from Qt.QtGui import QImage, QPixmap
 from Qt.QtWidgets import QDialog, QFileDialog, QWidget

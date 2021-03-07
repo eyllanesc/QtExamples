@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # https://matplotlib.org/3.2.1/gallery/text_labels_and_annotations/legend.html
 
 import sys

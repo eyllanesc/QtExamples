@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # https://matplotlib.org/3.2.1/gallery/subplots_axes_and_figures/subplot.html
 
 import sys

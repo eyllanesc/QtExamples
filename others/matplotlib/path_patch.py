@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # https://matplotlib.org/3.2.1/gallery/shapes_and_collections/path_patch.html
 
 import sys

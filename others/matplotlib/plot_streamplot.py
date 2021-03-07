@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # https://matplotlib.org/3.2.1/gallery/images_contours_and_fields/plot_streamplot.html
 
 import sys

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QEvent, QRect, QRectF, Qt
 from Qt.QtGui import (
     QBackingStore,

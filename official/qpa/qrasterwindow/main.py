@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from qtpy.QtCore import QPointF, QRect, QTimer, Qt
 from qtpy.QtGui import (
     QBrush,

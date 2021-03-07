@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QCoreApplication, Qt, QTimer, QUrl
 from Qt.QtGui import QGuiApplication
 from Qt.QtNetwork import QNetworkProxy

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from PyQt5.QtCore import QCoreApplication, QMetaObject, QObject, pyqtSlot
 from PyQt5.QtDBus import QDBusConnection
 

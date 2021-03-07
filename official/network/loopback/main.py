@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QByteArray, Qt, Slot
 from Qt.QtGui import QGuiApplication
 from Qt.QtNetwork import QAbstractSocket, QHostAddress, QTcpServer, QTcpSocket

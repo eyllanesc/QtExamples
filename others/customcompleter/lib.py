@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from collections.abc import Iterable
 from functools import cached_property
 from typing import List, Optional, Tuple

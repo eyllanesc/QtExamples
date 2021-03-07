@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtChart import QChart, QLineSeries, QSplineSeries
 from Qt.QtCore import QPoint, QRect, QRectF, QSizeF, Qt
 from Qt.QtGui import QPainter

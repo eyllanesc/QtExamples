@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt import __binding__
 from Qt.QtCore import QFile, QIODevice, QObject
 from Qt.QtNetwork import (

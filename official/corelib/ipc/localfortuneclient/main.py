@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtGui import QGuiApplication
 from Qt.QtWidgets import QApplication
 

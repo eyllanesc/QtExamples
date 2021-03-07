@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 
 from Qt import QtCore, QtGui, QtNetwork, QtWidgets

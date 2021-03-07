@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from PyQt5.QtWidgets import QMainWindow, QTextEdit
 
 from logfilepositionsource import LogFilePositionSource

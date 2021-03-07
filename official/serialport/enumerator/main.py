@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtSerialPort import QSerialPortInfo
 from Qt.QtWidgets import QApplication, QLabel, QScrollArea, QVBoxLayout, QWidget
 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtChart import QBoxPlotSeries, QChart, QChartView
 from Qt.QtCore import QFile, QIODevice, Qt
 from Qt.QtGui import QPainter

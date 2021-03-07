@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from functools import singledispatch
 
 from Qt.QtCore import Slot

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QFile, QIODevice, Slot
 from Qt.QtWidgets import QApplication, QFrame, QWidget
 

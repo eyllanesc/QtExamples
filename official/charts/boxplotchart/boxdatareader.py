@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtChart import QBoxSet
 from Qt.QtCore import QTextStream
 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from PyQt5.QtCore import Qt, QDateTime, QFile, QIODevice, QTimer
 from PyQt5.QtPositioning import QGeoCoordinate, QGeoPositionInfo, QGeoPositionInfoSource
 

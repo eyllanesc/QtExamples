@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Qt.QtCore import QPoint, QPointF
 from Qt.QtGui import QColor, QLinearGradient, QPixmap
 from Qt.QtWidgets import QGraphicsScene, QGraphicsView

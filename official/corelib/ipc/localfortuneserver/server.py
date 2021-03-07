@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import random
 
 from Qt.QtCore import QByteArray, QDataStream, QIODevice, Qt, QTimer, Slot

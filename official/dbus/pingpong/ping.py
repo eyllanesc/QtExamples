@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from PyQt5.QtCore import QCoreApplication
 from PyQt5.QtDBus import QDBusConnection, QDBusInterface, QDBusReply
 
