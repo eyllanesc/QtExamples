@@ -3,7 +3,7 @@ Cartopy==0.17.0
 geopandas==0.7.0
 geoplot==0.4.0
 matplotlib==3.2.1
-numpy==1.18.5
+numpy==1.22.0
 pandas==1.0.4
 PyQt5==5.15.0
 PySide2==5.15.0
